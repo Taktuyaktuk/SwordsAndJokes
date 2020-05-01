@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
 
-        WalkingDirection = WalkingDirection.normalized;
+        //WalkingDirection = WalkingDirection.normalized;
 
         WalkingDirection *= WalkingSpeed;
 
