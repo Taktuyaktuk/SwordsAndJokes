@@ -9761,12 +9761,12 @@ PrefabInstance:
     - target: {fileID: 8934313664409298725, guid: 2776798419fa20541aa94f6b595862ac,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.53
+      value: 6.89
       objectReference: {fileID: 0}
     - target: {fileID: 8934313664409298725, guid: 2776798419fa20541aa94f6b595862ac,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.53
+      value: -3.32
       objectReference: {fileID: 0}
     - target: {fileID: 8934313664409298725, guid: 2776798419fa20541aa94f6b595862ac,
         type: 3}
