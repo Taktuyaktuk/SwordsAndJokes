@@ -15,9 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/House.unity
     guid: 1bc6982c3ce7f5e49a014a168407fd95
   - enabled: 1
+    path: Assets/Scenes/House_1.unity
+    guid: bc298a8fec7a601418558c119972fab9
+  - enabled: 1
+    path: Assets/Scenes/House_2.unity
+    guid: 9e7136d2290ceb4458c08a456f71d7d4
+  - enabled: 1
     path: Assets/Scenes/Piwnica.unity
     guid: 9fa0fd8bbd6bec840a914f4847fdcbac
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
   m_configObjects: {}
