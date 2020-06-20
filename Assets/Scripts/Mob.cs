@@ -57,7 +57,7 @@ public class Mob : MonoBehaviour
             Rigidbody.velocity,
             targetVelocity,
             Time.deltaTime / 2f);
-        transform.right = (Vector2)direction;
+        //transform.right = (Vector2)direction;
     }
 
     void UpdateAttack()
