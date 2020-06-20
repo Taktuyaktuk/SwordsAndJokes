@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 36786297}
   - component: {fileID: 36786296}
   m_Layer: 0
-  m_Name: Layer_0
+  m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2451,8 +2451,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 36786295}
-  - {fileID: 1627312361}
   - {fileID: 1680724796}
+  - {fileID: 1627312361}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2647,6 +2647,46 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_GravityScale
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1.2867963
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423131, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423131, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ac7408c1804b4b03a730dbdbf150a94, type: 3}
 --- !u!1 &1605038726
@@ -2760,7 +2800,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1627312362
 TilemapRenderer:
@@ -2800,7 +2840,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -3413,7 +3453,7 @@ GameObject:
   - component: {fileID: 1680724798}
   - component: {fileID: 1680724797}
   m_Layer: 0
-  m_Name: Layer_1
+  m_Name: "\u015Aciany"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3431,7 +3471,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1680724797
 TilemapCollider2D:
@@ -3487,7 +3527,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -5012,6 +5052,21 @@ PrefabInstance:
     - target: {fileID: 4694542811306423127, guid: 8ac7408c1804b4b03a730dbdbf150a94,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4694542811306423130, guid: 8ac7408c1804b4b03a730dbdbf150a94,
+        type: 3}
+      propertyPath: m_GravityScale
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
