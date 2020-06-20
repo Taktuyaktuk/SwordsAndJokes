@@ -76,6 +76,7 @@ public class Mob : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<Player>();
+        Debug.Log(player);
 
         if (player != null)
             TargetPlayer = player;
