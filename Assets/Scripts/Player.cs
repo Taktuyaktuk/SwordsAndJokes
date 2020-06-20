@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     Animator animator;
 
     Rigidbody2D Rigidbody;
+    Collider2D Collider;
 
     private void Awake()
     {
@@ -54,5 +55,32 @@ public class Player : MonoBehaviour
         animator.SetFloat("Horizontal", move.x);
         animator.SetFloat("Vertical", move.y);
         animator.SetFloat("Speed", move.sqrMagnitude);
+    }
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        Debug.Log("KOLIZJA1");
+        if (Input.GetKey("space"))
+        {
+            Debug.Log("KOLIZJA - SPACJA - 1");
+            var entity = col.gameObject.GetComponent<Entity>();
+
+            if (entity != null)
+                entity.Health -= 1f;
+
+            Destroy(gameObject);
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D col)
+    {
+        if (Input.GetKey("space"))
+        {
+            var entity = col.gameObject.GetComponent<Entity>();
+            if (entity != null)
+                entity.Health -= 1f;
+
+            Destroy(col.gameObject);
+        }
     }
 }
