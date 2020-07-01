@@ -94,7 +94,7 @@ MeshRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: 2
 --- !u!114 &114000013740587952
 MonoBehaviour:
   m_ObjectHideFlags: 0
