@@ -4,7 +4,7 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Scriptable Objects/New Dialog Value", fileName ="New Dialog Asset")]
 
-public class TextAssetsValue : MonoBehaviour
+public class TextAssetsValue : ScriptableObject
 {
     public TextAsset value;
 }
