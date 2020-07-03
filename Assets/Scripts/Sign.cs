@@ -7,7 +7,6 @@ public class Sign : MonoBehaviour
 {
 
     public GameObject dialogBox;
-    [TextArea(3, 10)]
     public Text dialogText;
     public string dialog;
     public bool playerInRange;
