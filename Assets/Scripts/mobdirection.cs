@@ -4,10 +4,16 @@ using UnityEngine;
 
 public class mobdirection : MonoBehaviour
 {
-    public Transform player;
+     Transform player;
 
     public bool isFlipped = false;
 
+    private void Update()
+    {
+        var p = FindObjectOfType<Player>();
+        player = p.transform;
+        LookAtPlayer();
+    }
     public void LookAtPlayer()
     {
         Vector3 flipped = transform.localScale;
