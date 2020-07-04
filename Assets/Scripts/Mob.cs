@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -9,6 +10,10 @@ public class Mob : MonoBehaviour
     Rigidbody2D Rigidbody;
     Vector2 TargetPosition;
     Player TargetPlayer;
+
+    public Animator animator;//te dwa dodane przezemnie
+    
+
 
     [SerializeField]
     float Speed = 1f;
@@ -39,6 +44,8 @@ public class Mob : MonoBehaviour
     {
         UpdateMovement();
         UpdateAttack();
+       
+        animator.GetComponent<mobdirection>().LookAtPlayer();//tez dodane przezemnie
     }
 
     void UpdateMovement()

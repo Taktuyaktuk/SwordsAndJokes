@@ -37,15 +37,26 @@ public class Player : MonoBehaviour
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
 
-        //WalkingDirection = WalkingDirection.normalized;
+        if (Input.GetKey("space"))
+        {
+            StartCoroutine(AttackCo());
+        }
+            //WalkingDirection = WalkingDirection.normalized;
 
-        WalkingDirection *= WalkingSpeed;
+            WalkingDirection *= WalkingSpeed;
 
         Rigidbody.velocity = WalkingDirection;
 
         this.Animator();
     }
 
+    private IEnumerator AttackCo()
+    {
+        animator.SetBool("Atacking", true);
+        yield return null;
+        animator.SetBool("Atacking",false);
+        
+    }
     void Animator()
     {
         Vector2 move;
