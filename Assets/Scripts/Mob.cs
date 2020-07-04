@@ -11,7 +11,6 @@ public class Mob : MonoBehaviour
     Vector2 TargetPosition;
     Player TargetPlayer;
 
-    public Animator animator;//te dwa dodane przezemnie
     
 
 
@@ -45,7 +44,7 @@ public class Mob : MonoBehaviour
         UpdateMovement();
         UpdateAttack();
        
-        animator.GetComponent<mobdirection>().LookAtPlayer();//tez dodane przezemnie
+
     }
 
     void UpdateMovement()

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 5721742925211353375}
   - component: {fileID: 5721742925211353374}
   - component: {fileID: 2218717017218344553}
-  - component: {fileID: 2218717017218344563}
   m_Layer: 0
   m_Name: Rat
   m_TagString: Untagged
@@ -149,7 +148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625153c3b9b2d418699eb6232c970f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2218717017218344553}
   Speed: 1
   AttackDistance: 1
   AttackDemage: 2
@@ -172,17 +170,3 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2218717017218344563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5721742925211353373}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bc3692de9f921aa40a40bf3733614e5a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  isFlipped: 0
