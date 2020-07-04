@@ -310,7 +310,7 @@ BoxCollider2D:
   m_Offset: {x: 0.007174492, y: -0.36684847}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5736226, y: 0.5721504}
+    pivot: {x: 0.55892533, y: 0.75733566}
     oldSize: {x: 3.5, y: 5}
     newSize: {x: 3.5, y: 5}
     adaptiveTilingThreshold: 0.5
@@ -7124,6 +7124,21 @@ PrefabInstance:
       propertyPath: slots.Array.data[3]
       value: 
       objectReference: {fileID: 373336520}
+    - target: {fileID: 4771575205202315564, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771575205202315564, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771575205202315564, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e2b1a02a69db04190c22bc36c095cd, type: 3}
 --- !u!1001 &9058631669067906728
