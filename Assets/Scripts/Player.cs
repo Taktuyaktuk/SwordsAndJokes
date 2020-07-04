@@ -36,6 +36,7 @@ public class Player : MonoBehaviour
 
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
+       
 
         if (Input.GetKey("space"))
         {

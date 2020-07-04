@@ -9,14 +9,16 @@ public class Slot : MonoBehaviour
 
     private void Start()
     {
-        inventory = GameObject.FindGameObjectWithTag("Player").GetComponent<Inventory>();
+        var player = FindObjectOfType<Player>();
+        inventory = player.GetComponent<Inventory>();
     }
 
-    private void Update()
+private void Update()
     {
         if(transform.childCount <=0)
         {
             inventory.isFull[i] = false;
+            
         }
     }
 
