@@ -152,6 +152,7 @@ MonoBehaviour:
   Speed: 8
   AttackDistance: 2
   AttackDemage: 2
+  Experience: 10
 --- !u!95 &2218717017218344553
 Animator:
   serializedVersion: 3

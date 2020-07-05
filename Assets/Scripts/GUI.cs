@@ -7,12 +7,25 @@ public class GUI : MonoBehaviour
 {
     [SerializeField]
     Text HealthCounter;
+    [SerializeField]
+    Text LevelShow;
+    [SerializeField]
+    Text Exp;
 
     void Awake()
     {
         FindObjectOfType<Player>().GetComponent<Entity>().OnHealthChanged += health =>
         {
-            HealthCounter.text = health.ToString("N0");
+            HealthCounter.text = health.ToString("N0") + " hp";
+        };
+        FindObjectOfType<Player>().GetComponent<LevelSystem>().OnLevelUp += Level =>
+        {
+            LevelShow.text = Level.ToString("N0") + " lvl";
+        };
+        FindObjectOfType<Player>().GetComponent<LevelSystem>().OnExpRange += (CurrentExp, NextLevel) =>
+        {
+            Exp.text = CurrentExp.ToString("N0") + "/";
+            Exp.text += NextLevel.ToString("N0");
         };
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Entity))]
+[RequireComponent(typeof(LevelSystem))]
 public class Player : MonoBehaviour
 {
     [SerializeField]
@@ -69,26 +70,14 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
 
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        Debug.Log("KOLIZJA1");
-        if (Input.GetKey("space"))
-        {
-            Debug.Log("KOLIZJA - SPACJA - 1");
-            var entity = col.gameObject.GetComponent<Entity>();
-
-            if (entity != null)
-                entity.Health -= 1f;
-
-            Destroy(gameObject);
-        }
-    }
-
     void OnTriggerStay2D(Collider2D col)
     {
         if (Input.GetKey("space"))
         {
             var entity = col.gameObject.GetComponent<Entity>();
+            var mob = col.gameObject.GetComponent<Mob>();
+            var exp = GetComponent<LevelSystem>();
+            exp.Experience += mob.Experience;
             if (entity != null)
                 entity.Health -= 1f;
 

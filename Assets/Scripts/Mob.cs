@@ -11,9 +11,6 @@ public class Mob : MonoBehaviour
     Vector2 TargetPosition;
     Player TargetPlayer;
 
-    
-
-
     [SerializeField]
     float Speed = 1f;
 
@@ -22,6 +19,9 @@ public class Mob : MonoBehaviour
 
     [SerializeField]
     float AttackDemage = 2f;
+
+
+    public int Experience = 10;
 
     void Start()
     {
@@ -43,8 +43,6 @@ public class Mob : MonoBehaviour
     {
         UpdateMovement();
         UpdateAttack();
-       
-
     }
 
     void UpdateMovement()
@@ -55,7 +53,6 @@ public class Mob : MonoBehaviour
             TargetPosition = TargetPlayer.transform.position;
             targetSpeed *= 2f;
         }
-
 
         var direction = (Vector3)TargetPosition - transform.position;
         var targetVelocity = direction.normalized * targetSpeed / 2f;
@@ -82,7 +79,6 @@ public class Mob : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<Player>();
-        Debug.Log(player);
 
         if (player != null)
             TargetPlayer = player;
