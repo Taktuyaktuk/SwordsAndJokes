@@ -32099,8 +32099,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1543101062}
-  - {fileID: 1831175006}
   - {fileID: 150768988}
+  - {fileID: 1831175006}
   - {fileID: 2114403455}
   - {fileID: 1764991593}
   - {fileID: 544268725}
@@ -40044,6 +40044,8 @@ GameObject:
   - component: {fileID: 1173500201}
   - component: {fileID: 1173500200}
   - component: {fileID: 1173500199}
+  - component: {fileID: 1173500203}
+  - component: {fileID: 1173500202}
   m_Layer: 0
   m_Name: right_chicken 2_0
   m_TagString: Untagged
@@ -40128,12 +40130,56 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1173500198}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.186449, y: -3.0563803, z: 0.115234375}
+  m_LocalPosition: {x: -10.27, y: -10.62, z: 0.115234375}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_Children: []
   m_Father: {fileID: 1917979637}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1173500202
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173500198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.08183658, y: 0.040934086}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 2}
+    newSize: {x: 2, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 6.0918264, y: 6.502821}
+  m_EdgeRadius: 0
+--- !u!114 &1173500203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173500198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1155344169}
+  dialogText: {fileID: 142862503}
+  dialog: 'Rot Wow: Please Help... KO KO KO... Bad wizard change me into chicken!...KO
+    KO KO... Find my brother''s,maybe one of them will help me...KO KO KO...I cant
+    move but i have bigger problems... KO KO KO... Please help me...'
+  playerInRange: 0
 --- !u!1001 &1190742857
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48531,6 +48577,8 @@ GameObject:
   - component: {fileID: 1691828167}
   - component: {fileID: 1691828170}
   - component: {fileID: 1691828169}
+  - component: {fileID: 1691828172}
+  - component: {fileID: 1691828171}
   m_Layer: 0
   m_Name: Coffin
   m_TagString: Untagged
@@ -48648,6 +48696,49 @@ BoxCollider2D:
   m_AutoTiling: 0
   serializedVersion: 2
   m_Size: {x: 0.90353775, y: 0.51847744}
+  m_EdgeRadius: 0
+--- !u!114 &1691828171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1155344169}
+  dialogText: {fileID: 142862503}
+  dialog: 'Gob Wow: Why i can''t move? I just staying in one place like a rock...God''s
+    do something with that! Please...'
+  playerInRange: 0
+--- !u!61 &1691828172
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691828166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.09024429, y: -0.13693428}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.50296545, y: 0.38297263}
+    oldSize: {x: 1.5625, y: 2.75}
+    newSize: {x: 1.5625, y: 2.75}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.78833, y: 5.8822136}
   m_EdgeRadius: 0
 --- !u!1001 &1692491628
 PrefabInstance:
@@ -51216,6 +51307,54 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7493179546243575947}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1757360297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8028821795754966788, guid: f443f940646630d4d92a8f17bcf20973,
+    type: 3}
+  m_PrefabInstance: {fileID: 1278708353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1757360301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757360297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogBox: {fileID: 1155344169}
+  dialogText: {fileID: 142862503}
+  dialog: '" Bridge in development phase. Come back later.'
+  playerInRange: 0
+--- !u!61 &1757360302
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1757360297}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.3526573, y: 0.12784576}
+  m_SpriteTilingProperty:
+    border: {x: 1.875, y: 0, z: 0, w: 0}
+    pivot: {x: 0.65794635, y: 0.5781894}
+    oldSize: {x: 7.875, y: 11.625}
+    newSize: {x: 7.875, y: 11.625}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 19.067965, y: 43.55858}
+  m_EdgeRadius: 0
 --- !u!4 &1764991593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2379676361139155722, guid: 4f2900fee88cd3b41919108419af1ae6,

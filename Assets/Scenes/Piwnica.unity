@@ -6419,7 +6419,7 @@ PrefabInstance:
         type: 3}
       propertyPath: dialog
       value: 'Giant Chicken: I m afraid , Giant Chicken is Bigest surprise for now...But
-        don''t worry my fried...Even right now God''s are creating something...Just
+        don''t worry my friend...Even right now God''s are creating something...Just
         be patient'
       objectReference: {fileID: 0}
     - target: {fileID: 1832315754313697789, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
