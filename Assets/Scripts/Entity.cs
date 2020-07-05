@@ -2,11 +2,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Entity : MonoBehaviour
 {
     [SerializeField]
     float InitialHealth = 3f;
+
 
     private float health;
     public float Health
@@ -28,7 +30,7 @@ public class Entity : MonoBehaviour
                 if (OnKilled != null)
                     OnKilled.Invoke();
 
-                Destroy(gameObject);
+                SceneManager.LoadScene("Dead");
             }
                
         }
@@ -36,6 +38,9 @@ public class Entity : MonoBehaviour
 
     public Action<float> OnHealthChanged;
     public Action OnKilled;
+
+   
+
 
     void Start()
     {
