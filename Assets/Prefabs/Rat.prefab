@@ -149,8 +149,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625153c3b9b2d418699eb6232c970f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1
-  AttackDistance: 1
+  Speed: 8
+  AttackDistance: 2
   AttackDemage: 2
 --- !u!95 &2218717017218344553
 Animator:
@@ -183,5 +183,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc3692de9f921aa40a40bf3733614e5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj: {fileID: 4162738581212936607, guid: e2e2b1a02a69db04190c22bc36c095cd, type: 3}
   isFlipped: 0
