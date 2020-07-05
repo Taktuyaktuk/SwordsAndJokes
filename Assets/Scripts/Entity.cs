@@ -9,7 +9,6 @@ public class Entity : MonoBehaviour
     [SerializeField]
     float InitialHealth = 3f;
 
-
     private float health;
     public float Health
     {
@@ -30,7 +29,10 @@ public class Entity : MonoBehaviour
                 if (OnKilled != null)
                     OnKilled.Invoke();
 
-                SceneManager.LoadScene("Dead");
+                if(gameObject.tag == "Mob")
+                    Destroy(gameObject);
+                else
+                    SceneManager.LoadScene("Dead");
             }
                
         }
@@ -38,9 +40,6 @@ public class Entity : MonoBehaviour
 
     public Action<float> OnHealthChanged;
     public Action OnKilled;
-
-   
-
 
     void Start()
     {

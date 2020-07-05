@@ -75,13 +75,14 @@ public class Player : MonoBehaviour
         if (Input.GetKey("space"))
         {
             var entity = col.gameObject.GetComponent<Entity>();
-            var mob = col.gameObject.GetComponent<Mob>();
-            var exp = GetComponent<LevelSystem>();
-            exp.Experience += mob.Experience;
+            entity.OnKilled += () =>
+            {
+                var mob = col.gameObject.GetComponent<Mob>();
+                var exp = GetComponent<LevelSystem>();
+                exp.Experience += mob.Experience;
+            };
             if (entity != null)
                 entity.Health -= 1f;
-
-            Destroy(col.gameObject);
         }
     }
 }
