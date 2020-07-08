@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
 
     void Start()
     {
-        GetComponent<Entity>().OnKilled += () => Application.Quit();
+        //GetComponent<Entity>().OnKilled += () => Application.Quit();
     }
 
     void Update()
