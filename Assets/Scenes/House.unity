@@ -5425,6 +5425,11 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.56082153
       objectReference: {fileID: 0}
+    - target: {fileID: 4771575204991890611, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4771575205202315564, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_BackGroundColor.r
