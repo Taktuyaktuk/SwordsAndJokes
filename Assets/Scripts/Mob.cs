@@ -9,6 +9,8 @@ public class Mob : MonoBehaviour
     Vector2 TargetPosition;
     Player TargetPlayer;
 
+    Animator animator;
+
     [SerializeField]
     float Speed = 1f;
 
@@ -25,6 +27,7 @@ public class Mob : MonoBehaviour
     {
         Rigidbody = GetComponent<Rigidbody2D>();
         StartCoroutine(ChangeTargetPositionCoroutine());
+        animator = GetComponent<Animator>();
     }
 
     IEnumerator ChangeTargetPositionCoroutine()
@@ -67,11 +70,16 @@ public class Mob : MonoBehaviour
             return;
 
         var distance = (TargetPlayer.transform.position - transform.position).magnitude;
+        animator.SetBool("Attack", false);
 
         if (distance > AttackDistance)
             return;
 
         TargetPlayer.GetComponent<Entity>().Health -= AttackDemage * Time.deltaTime;
+        
+        animator.SetBool("Attack",true);
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
