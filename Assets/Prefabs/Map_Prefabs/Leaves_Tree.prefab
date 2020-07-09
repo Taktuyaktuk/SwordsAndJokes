@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6764622311758313864}
   - component: {fileID: 6764622311758313865}
   - component: {fileID: 6764622311758313866}
+  - component: {fileID: 8755968487907357233}
   m_Layer: 0
   m_Name: Leaves_Tree
   m_TagString: Untagged
@@ -130,3 +131,22 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.243062, y: 0.7548213}
   m_EdgeRadius: 0
+--- !u!95 &8755968487907357233
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6764622311758313860}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2f4906a1388b70d47a2413ebb38cfb9e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

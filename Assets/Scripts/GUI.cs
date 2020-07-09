@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GUI : MonoBehaviour
 {
     [SerializeField]
-    Text HealthCounter;
+    TextMeshProUGUI HealthCounter;
     [SerializeField]
-    Text LevelShow;
+    TextMeshProUGUI LevelShow;
     [SerializeField]
-    Text Exp;
+    TextMeshProUGUI Exp;
 
     void Awake()
     {
