@@ -1,15 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class NPC : MonoBehaviour
 {
+    [SerializeField]
     GameObject text;
 
+    [System.Obsolete]
     private void Awake()
     {
-        text = GameObject.Find("TextPRESS");
-        text.SetActive(false);
+        if(text.active)
+            text.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
