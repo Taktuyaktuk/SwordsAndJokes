@@ -1374,9 +1374,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: e9ad5748f51f6de4ba78e14f4f27af6c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 3efd10a0b27323944b4b9ef382b25baa, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1653,7 +1653,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2114128290}
-  - {fileID: 1485976416}
+  - {fileID: 1105237920934927831}
   - {fileID: 1868129132}
   - {fileID: 224365280}
   - {fileID: 1719211122}
@@ -1747,12 +1747,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 724293697874974220, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
     type: 3}
   m_PrefabInstance: {fileID: 717224373}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1485976416 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1105237922401758902, guid: 4ab4d7c9b97d16946964a55e36d8db05,
-    type: 3}
-  m_PrefabInstance: {fileID: 1105237920934927830}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1649029927 stripped
 Transform:
@@ -5849,6 +5843,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4ab4d7c9b97d16946964a55e36d8db05, type: 3}
+--- !u!4 &1105237920934927831 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 1105237920934927830}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1585196957815274001
 PrefabInstance:
   m_ObjectHideFlags: 0
