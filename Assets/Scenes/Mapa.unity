@@ -42271,6 +42271,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 487570259}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1118806104 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6532905043162522182, guid: e2e2b1a02a69db04190c22bc36c095cd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1794819318}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1126791141 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 635577332374183677, guid: 858f94e871eaaee418559a28380a640d,
@@ -52415,6 +52421,8 @@ GameObject:
   - component: {fileID: 1691828169}
   - component: {fileID: 1691828172}
   - component: {fileID: 1691828171}
+  - component: {fileID: 1691828174}
+  - component: {fileID: 1691828173}
   m_Layer: 0
   m_Name: Coffin
   m_TagString: Untagged
@@ -52576,6 +52584,35 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.78833, y: 5.8822136}
   m_EdgeRadius: 0
+--- !u!114 &1691828173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691828166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405e06b5f1f0d4e27bea3a08ca1ab052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1118806104}
+--- !u!58 &1691828174
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1691828166}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.025194168, y: -0.006249428}
+  serializedVersion: 2
+  m_Radius: 1.7627316
 --- !u!1001 &1692491628
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -65034,6 +65071,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mary Jane
       objectReference: {fileID: 0}
+    - target: {fileID: 6525980725931710188, guid: f504fbef7d92242c3afd56e10183beba,
+        type: 3}
+      propertyPath: text
+      value: 
+      objectReference: {fileID: 1118806104}
     - target: {fileID: 6525980726308463965, guid: f504fbef7d92242c3afd56e10183beba,
         type: 3}
       propertyPath: m_LocalPosition.x
