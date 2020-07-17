@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -25,7 +26,10 @@ public class SaveSystem : MonoBehaviour
         {
             string jsonFromFile = File.ReadAllText(fileName);
             saveData = JsonUtility.FromJson<SaveData>(jsonFromFile);
-            entity.Health = saveData.hp;
+            float hp = saveData.hp;
+            if ((Int32)saveData.hp == 0)
+                hp = 10f;
+            entity.Health = hp;
             lvl.Level = saveData.level;
             lvl.Experience = saveData.exp;
             //var m_Scene = SceneManager.GetActiveScene();
@@ -46,7 +50,7 @@ public class SaveSystem : MonoBehaviour
         }
     }
 
-    private void Save()
+    public void Save()
     {
         countToSave = 0f;
         var player = FindObjectOfType<Player>();
@@ -84,7 +88,6 @@ public class SaveSystem : MonoBehaviour
         //}
         //else
         //    saveData.postions.Add(new SceneSave { sceneName = sceneName, position = player.transform.position, rotation = player.transform.rotation });
-
         string JSON = JsonUtility.ToJson(saveData, true);
         File.WriteAllText(fileName, JSON);
     }

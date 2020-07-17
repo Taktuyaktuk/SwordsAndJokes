@@ -65,31 +65,21 @@ public class Mob : MonoBehaviour
         //transform.right = (Vector2)direction;
     }
 
-    void UpdateAttack()
-        
+    void UpdateAttack()   
     {
-        Debug.Log(TargetPlayer);
         if (TargetPlayer == null)
             return;
 
         var distance = (TargetPlayer.transform.position - transform.position).magnitude;
         animator.SetBool("Attack", false);
 
-        Debug.Log("distance "+distance);
-        Debug.Log("attack distance "+AttackDistance);
-
         if (distance > AttackDistance)
             return;
-
-        Debug.Log("DMG "+AttackDemage * Time.deltaTime);
-        Debug.Log("HP "+TargetPlayer.GetComponent<Entity>().Health);
 
         TargetPlayer.GetComponent<Entity>().Health -= AttackDemage * Time.deltaTime;
         
         
         animator.SetBool("Attack",true);
-        
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
