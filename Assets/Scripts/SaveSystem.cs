@@ -28,14 +28,14 @@ public class SaveSystem : MonoBehaviour
             entity.Health = saveData.hp;
             lvl.Level = saveData.level;
             lvl.Experience = saveData.exp;
-            var m_Scene = SceneManager.GetActiveScene();
-            string sceneName = m_Scene.name;
-            var obj = saveData.postions.Find(x => x.sceneName == sceneName);
-            if (obj != null)
-            {
-                player.transform.position = obj.position;
-                player.transform.rotation = obj.rotation;
-            }
+            //var m_Scene = SceneManager.GetActiveScene();
+            //string sceneName = m_Scene.name;
+            //var obj = saveData.postions.Find(x => x.sceneName == sceneName);
+            //if (obj != null)
+            //{
+            //    player.transform.position = obj.position;
+            //    player.transform.rotation = obj.rotation;
+            //}
         }
         else
         {
@@ -57,17 +57,17 @@ public class SaveSystem : MonoBehaviour
 
         if (saveData == null)
         {
-            List<SceneSave> items = new List<SceneSave>()
-            {
-                new SceneSave{ sceneName = sceneName, position = player.transform.position, rotation = player.transform.rotation }
-            };
+            //List<SceneSave> items = new List<SceneSave>()
+            //{
+            //    new SceneSave{ sceneName = sceneName, position = player.transform.position, rotation = player.transform.rotation }
+            //};
             saveData = new SaveData()
             {
                 name = "player",
                 hp = entity.Health,
                 level = lvl.Level,
-                exp = lvl.Experience,
-                postions = items
+                exp = lvl.Experience
+                //postions = items
             };
         }
         else
@@ -76,14 +76,14 @@ public class SaveSystem : MonoBehaviour
             saveData.level = lvl.Level;
             saveData.exp = lvl.Experience;
         }
-        var obj = saveData.postions.Find(x => x.sceneName == sceneName);
-        if (obj != null)
-        {
-            obj.position = player.transform.position;
-            obj.rotation = player.transform.rotation;
-        }
-        else
-            saveData.postions.Add(new SceneSave { sceneName = sceneName, position = player.transform.position, rotation = player.transform.rotation });
+        //var obj = saveData.postions.Find(x => x.sceneName == sceneName);
+        //if (obj != null)
+        //{
+        //    obj.position = player.transform.position;
+        //    obj.rotation = player.transform.rotation;
+        //}
+        //else
+        //    saveData.postions.Add(new SceneSave { sceneName = sceneName, position = player.transform.position, rotation = player.transform.rotation });
 
         string JSON = JsonUtility.ToJson(saveData, true);
         File.WriteAllText(fileName, JSON);
