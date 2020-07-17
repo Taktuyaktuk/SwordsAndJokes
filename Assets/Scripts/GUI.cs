@@ -12,6 +12,8 @@ public class GUI : MonoBehaviour
     TextMeshProUGUI LevelShow;
     [SerializeField]
     TextMeshProUGUI Exp;
+    [SerializeField]
+    TextMeshProUGUI BulletsCounter;
 
     void Awake()
     {
@@ -27,6 +29,10 @@ public class GUI : MonoBehaviour
         {
             Exp.text = CurrentExp.ToString("N0") + "/";
             Exp.text += NextLevel.ToString("N0");
+        };
+        FindObjectOfType<PlayerShooting>().OnBulletsChanged += bullets =>
+        {
+            BulletsCounter.text = bullets.ToString() + " x arrows";
         };
     }
 }

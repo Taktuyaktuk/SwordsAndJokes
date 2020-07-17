@@ -13,9 +13,10 @@ public class BulletDemage : MonoBehaviour
             var entity = collision.gameObject.GetComponent<Entity>();
 
             if (entity != null)
+            {
                 entity.Health -= 1f;
-
-            Destroy(gameObject);
+                Destroy(gameObject);
+            }
         }
     }
 }
