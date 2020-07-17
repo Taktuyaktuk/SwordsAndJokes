@@ -10017,6 +10017,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088500, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.6718205
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088500, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.7350469
+      objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: newScene
@@ -13819,7 +13829,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1109018722}
   dialogText: {fileID: 839846423}
-  dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat Chicken...No hit me...Gugu...'
+  dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat only Chicken''s and Game
+    developer''s...Me not eat Humans...No hit me...Gugu...'
   playerInRange: 0
 --- !u!61 &2085581875
 BoxCollider2D:
@@ -14098,6 +14109,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088500, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.5304334
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088500, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.4888668
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088500, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.06105709
       objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088502, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
