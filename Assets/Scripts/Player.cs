@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     Rigidbody2D Rigidbody;
     Collider2D Collider;
 
+    List<GameObject> currentCollisions = new List<GameObject>();
+
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
@@ -70,19 +72,43 @@ public class Player : MonoBehaviour
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
 
-    void OnTriggerStay2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision);
+        currentCollisions.Add(collision.gameObject);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        currentCollisions.Remove(collision.gameObject);
+    }
+
+
+    void OnTriggerStay2D(Collider2D coll)
     {
         if (Input.GetKey("space"))
         {
-            var entity = col.gameObject.GetComponent<Entity>();
-            entity.OnKilled += () =>
+            bool find = false;
+            int i = 0;
+            while (!find || i >= currentCollisions.Count)
             {
-                var mob = col.gameObject.GetComponent<Mob>();
-                var exp = GetComponent<LevelSystem>();
-                exp.Experience += mob.Experience;
-            };
-            if (entity != null)
-                entity.Health -= 1f;
+                var col = currentCollisions[i];
+                var entity = col.gameObject.GetComponent<Entity>();
+                if(entity == null)
+                    i++;
+                else
+                {
+                    find = true;
+                    entity.OnKilled += () =>
+                    {
+                        var mob = col.gameObject.GetComponent<Mob>();
+                        var exp = GetComponent<LevelSystem>();
+                        exp.Experience += mob.Experience;
+                    };
+                    if (entity != null)
+                        entity.Health -= 1f;
+                }
+            }
         }
     }
 }
