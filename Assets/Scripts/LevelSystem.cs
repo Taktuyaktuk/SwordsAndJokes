@@ -23,8 +23,6 @@ public class LevelSystem : MonoBehaviour
             {
                 Level += 1;
                 experience = 0;
-                var entity = FindObjectOfType<Player>().GetComponent<Entity>();
-                entity.Health += 5f;
             }
 
             if (OnExpRange != null)
