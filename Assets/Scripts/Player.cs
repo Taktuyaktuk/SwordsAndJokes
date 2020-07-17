@@ -93,16 +93,21 @@ public class Player : MonoBehaviour
             {
                 var col = currentCollisions[i];
                 var entity = col.gameObject.GetComponent<Entity>();
-                if(entity == null)
+                var player = col.gameObject.GetComponent<Player>();
+                if (entity == null || player == null)
                     i++;
                 else
                 {
                     find = true;
                     entity.OnKilled += () =>
                     {
+                        currentCollisions.Remove(col.gameObject);
                         var mob = col.gameObject.GetComponent<Mob>();
-                        var exp = GetComponent<LevelSystem>();
-                        exp.Experience += mob.Experience;
+                        if(mob != null)
+                        {
+                            var exp = GetComponent<LevelSystem>();
+                            exp.Experience += mob.Experience;
+                        }
                     };
                     if (entity != null)
                         entity.Health -= 1f;

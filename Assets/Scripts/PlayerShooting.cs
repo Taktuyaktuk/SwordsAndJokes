@@ -20,7 +20,7 @@ public class PlayerShooting : MonoBehaviour
     public int Bullets
     {
         get { return bullets; }
-        private set
+        set
         {
             bullets = value;
 

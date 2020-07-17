@@ -21,8 +21,11 @@ public class GenerateLoot : MonoBehaviour
         if (Random.value > probability)
             return;
 
-        var loot = Instantiate(prefab);
-        loot.transform.position = transform.position;
+        //var loot = Instantiate(prefab);
+        //loot.transform.position = transform.position;
+        var player = FindObjectOfType<Player>();
+        var ps = player.GetComponent<PlayerShooting>();
+        ps.Bullets += Random.Range(min, max);
         //loot.GetComponent<Bullets>().Amount = Random.Range(min, max);
     }
 }

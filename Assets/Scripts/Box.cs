@@ -11,6 +11,7 @@ public class Box : MonoBehaviour
         GetComponent<Activator>().OnActivated += () =>
         {
             GetComponent<GenerateLoot>().Generate();
+            Debug.Log(gameObject);
             Destroy(gameObject);
         };
     }

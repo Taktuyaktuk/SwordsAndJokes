@@ -29,7 +29,7 @@ public class Entity : MonoBehaviour
                 if (OnKilled != null)
                     OnKilled.Invoke();
 
-                if(gameObject.tag == "Mob")
+                if(gameObject.tag == "Mob" || gameObject.tag == "Box")
                     Destroy(gameObject);
                 else
                     SceneManager.LoadScene("Dead");
