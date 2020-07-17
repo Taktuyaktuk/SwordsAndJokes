@@ -89,12 +89,11 @@ public class Player : MonoBehaviour
         {
             bool find = false;
             int i = 0;
-            while (!find || i >= currentCollisions.Count)
+            while (!find || i < currentCollisions.Count)
             {
                 var col = currentCollisions[i];
                 var entity = col.gameObject.GetComponent<Entity>();
-                var player = col.gameObject.GetComponent<Player>();
-                if (entity == null || player == null)
+                if (entity == null)
                     i++;
                 else
                 {
