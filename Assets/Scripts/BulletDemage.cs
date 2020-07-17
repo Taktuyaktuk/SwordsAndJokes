@@ -7,11 +7,15 @@ public class BulletDemage : MonoBehaviour
 {
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var entity = collision.gameObject.GetComponent<Entity>();
+        var player = collision.gameObject.GetComponent<Player>();
+        if (player == null)
+        {
+            var entity = collision.gameObject.GetComponent<Entity>();
 
-        if (entity != null)
-            entity.Health -= 1f;
+            if (entity != null)
+                entity.Health -= 1f;
 
-        Destroy(gameObject);
+            Destroy(gameObject);
+        }
     }
 }

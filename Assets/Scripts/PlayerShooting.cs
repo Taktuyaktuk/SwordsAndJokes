@@ -53,7 +53,7 @@ public class PlayerShooting : MonoBehaviour
         Bullets--;
 
         var bullet = Instantiate(BulletPref);
-        bullet.transform.position = bow.transform.position + bow.transform.rotation * (Vector3)ShootPoint;
+        bullet.transform.position = transform.position + transform.rotation * (Vector3)ShootPoint;
         bullet.transform.rotation = bow.transform.rotation;
 
         var bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
