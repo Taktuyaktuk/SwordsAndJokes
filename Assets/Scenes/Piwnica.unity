@@ -6963,6 +6963,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 424262046}
     m_Modifications:
+    - target: {fileID: 8977682500280226528, guid: 9235a5d5b1edf18478abcd2a346e1c61,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8977682500280226529, guid: 9235a5d5b1edf18478abcd2a346e1c61,
         type: 3}
       propertyPath: m_Offset.y
@@ -7960,6 +7965,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: red_potions
       objectReference: {fileID: 0}
+    - target: {fileID: 9058631669014608636, guid: 38ac33649b3d17949b25c7e57f6e4699,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 9058631669014608637, guid: 38ac33649b3d17949b25c7e57f6e4699,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8405,6 +8415,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936606, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936607, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
@@ -13689,6 +13704,7 @@ GameObject:
   - component: {fileID: 2085581873}
   - component: {fileID: 2085581872}
   - component: {fileID: 2085581874}
+  - component: {fileID: 2085581875}
   m_Layer: 0
   m_Name: golem
   m_TagString: Untagged
@@ -13748,7 +13764,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 00fb01dbc0df0f642857acbf026feccc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13805,6 +13821,32 @@ MonoBehaviour:
   dialogText: {fileID: 839846423}
   dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat Chicken...No hit me...Gugu...'
   playerInRange: 0
+--- !u!61 &2085581875
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2085581869}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011807054, y: -1.2011745}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2, y: 3}
+    newSize: {x: 0.32, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.9137338, y: 0.29066312}
+  m_EdgeRadius: 0
 --- !u!1 &2112887648
 GameObject:
   m_ObjectHideFlags: 0
@@ -14061,6 +14103,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wlaz
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815035698342278, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28173f5d47238d349ba92e18bbaa1e03, type: 3}
