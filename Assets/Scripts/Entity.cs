@@ -24,7 +24,7 @@ public class Entity : MonoBehaviour
             if (OnHealthChanged != null)
                 OnHealthChanged.Invoke(health);
 
-            if (health <= 0)
+            if (health <= 0.75)
             {
                 if (OnKilled != null)
                     OnKilled.Invoke();
