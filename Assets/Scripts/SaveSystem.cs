@@ -14,7 +14,6 @@ public class SaveSystem : MonoBehaviour
         var player = FindObjectOfType<Player>();
         var entity = player.GetComponent<Entity>();
         var lvl = player.GetComponent<LevelSystem>();
-        Debug.Log(entity);
 
         if (File.Exists(fileName))
         {
@@ -25,6 +24,13 @@ public class SaveSystem : MonoBehaviour
             lvl.Experience = saveData.exp;
             player.transform.position = saveData.position;
             player.transform.rotation = saveData.rotation;
+        }
+        else
+        {
+            entity.Health = 5;
+            lvl.Level = 1;
+            lvl.Experience = 0;
+            Save();
         }
     }
 

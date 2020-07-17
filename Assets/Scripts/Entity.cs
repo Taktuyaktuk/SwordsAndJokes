@@ -43,7 +43,7 @@ public class Entity : MonoBehaviour
 
     void Start()
     {
-        Health = InitialHealth;
+        //Health = InitialHealth;
     }
 
     void Update()
