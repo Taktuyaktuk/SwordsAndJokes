@@ -11,6 +11,7 @@ public class SaveSystem : MonoBehaviour
     private void Start()
     {
         fileName = Path.Combine(Application.persistentDataPath, SAVE_FILE);
+	Debug.Log(fileName);
         var player = FindObjectOfType<Player>();
         var entity = player.GetComponent<Entity>();
         var lvl = player.GetComponent<LevelSystem>();
