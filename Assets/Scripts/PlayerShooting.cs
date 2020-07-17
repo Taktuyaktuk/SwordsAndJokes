@@ -14,6 +14,8 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     Vector2 ShootPoint;
 
+    Bow bow;
+
     private int bullets;
     public int Bullets
     {
@@ -28,6 +30,11 @@ public class PlayerShooting : MonoBehaviour
     }
 
     public event Action<int> OnBulletsChanged;
+
+    private void Awake()
+    {
+        bow = FindObjectOfType<Bow>();
+    }
 
     void Start()
     {
@@ -46,11 +53,11 @@ public class PlayerShooting : MonoBehaviour
         Bullets--;
 
         var bullet = Instantiate(BulletPref);
-        bullet.transform.position = transform.position + transform.rotation * (Vector3)ShootPoint;
-        bullet.transform.rotation = transform.rotation;
+        bullet.transform.position = bow.transform.position + bow.transform.rotation * (Vector3)ShootPoint;
+        bullet.transform.rotation = bow.transform.rotation;
 
         var bulletRigidbody = bullet.GetComponent<Rigidbody2D>();
-        bulletRigidbody.velocity = transform.right * BulletSpeed;
+        bulletRigidbody.velocity = bow.transform.right * BulletSpeed;
     }
 
     public void CollectBullets(int amount)
