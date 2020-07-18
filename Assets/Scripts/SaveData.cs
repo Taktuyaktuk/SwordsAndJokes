@@ -18,5 +18,6 @@ public class SaveData
     public float hp;
     public int level;
     public int exp;
+    public int bullets;
     //public List<SceneSave> postions;
 }

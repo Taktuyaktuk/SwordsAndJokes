@@ -18,6 +18,7 @@ public class SaveSystem : MonoBehaviour
         var player = FindObjectOfType<Player>();
         var entity = player.GetComponent<Entity>();
         var lvl = player.GetComponent<LevelSystem>();
+        var ps = player.GetComponent<PlayerShooting>();
 
         if (File.Exists(fileName))
         {
@@ -29,6 +30,7 @@ public class SaveSystem : MonoBehaviour
             entity.Health = hp;
             lvl.Level = saveData.level;
             lvl.Experience = saveData.exp;
+            ps.Bullets = saveData.bullets;
             //var m_Scene = SceneManager.GetActiveScene();
             //string sceneName = m_Scene.name;
             //var obj = saveData.postions.Find(x => x.sceneName == sceneName);
@@ -43,6 +45,7 @@ public class SaveSystem : MonoBehaviour
             entity.Health = 5;
             lvl.Level = 1;
             lvl.Experience = 0;
+            ps.Bullets = 5;
             Save();
         }
     }
@@ -52,6 +55,8 @@ public class SaveSystem : MonoBehaviour
         var player = FindObjectOfType<Player>();
         var entity = player.GetComponent<Entity>();
         var lvl = player.GetComponent<LevelSystem>();
+        var ps = player.GetComponent<PlayerShooting>();
+
         var m_Scene = SceneManager.GetActiveScene();
         string sceneName = m_Scene.name;
 
@@ -66,7 +71,8 @@ public class SaveSystem : MonoBehaviour
                 name = "player",
                 hp = entity.Health,
                 level = lvl.Level,
-                exp = lvl.Experience
+                exp = lvl.Experience,
+                bullets = ps.Bullets
                 //postions = items
             };
         }
@@ -75,6 +81,7 @@ public class SaveSystem : MonoBehaviour
             saveData.hp = entity.Health;
             saveData.level = lvl.Level;
             saveData.exp = lvl.Experience;
+            saveData.bullets = ps.Bullets;
         }
         //var obj = saveData.postions.Find(x => x.sceneName == sceneName);
         //if (obj != null)
