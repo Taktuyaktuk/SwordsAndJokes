@@ -12,9 +12,6 @@ public class SaveSystem : MonoBehaviour
     string fileName;
     SaveData saveData;
 
-    float nextSave = 5;
-    float countToSave = 0;
-
     private void Start()
     {
         fileName = Path.Combine(Application.persistentDataPath, SAVE_FILE);
@@ -52,7 +49,6 @@ public class SaveSystem : MonoBehaviour
 
     public void Save()
     {
-        countToSave = 0f;
         var player = FindObjectOfType<Player>();
         var entity = player.GetComponent<Entity>();
         var lvl = player.GetComponent<LevelSystem>();
@@ -94,9 +90,6 @@ public class SaveSystem : MonoBehaviour
 
     private void Update()
     {
-        if (nextSave > countToSave)
-            countToSave += 1f;
-        else
-            Save();
+        Save();
     }
 }

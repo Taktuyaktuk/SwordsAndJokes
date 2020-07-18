@@ -21,7 +21,7 @@ public class Mob : MonoBehaviour
     float AttackDemage = 2f;
 
 
-    public int Experience = 10;
+    public int Experience = 1;
 
     void Start()
     {

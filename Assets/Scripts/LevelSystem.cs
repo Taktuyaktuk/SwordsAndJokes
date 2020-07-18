@@ -50,7 +50,7 @@ public class LevelSystem : MonoBehaviour
 
     void Start()
     {
-        Experience = 0;
+        //Experience = 0;
         //Level = InitLevel;
     }
 

@@ -16,7 +16,9 @@ public class Player : MonoBehaviour
     Rigidbody2D Rigidbody;
     Collider2D Collider;
 
-    List<GameObject> currentCollisions = new List<GameObject>();
+    public Transform attackLocation;
+    public float attackRange;
+    public LayerMask enemies;
 
     private void Awake()
     {
@@ -31,6 +33,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         this.UpdateMovement();
+        this.Attack();
     }
 
     void UpdateMovement()
@@ -71,51 +74,32 @@ public class Player : MonoBehaviour
         animator.SetFloat("Vertical", move.y);
         animator.SetFloat("Speed", move.sqrMagnitude);
     }
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    void Attack()
     {
-        currentCollisions.Add(collision.gameObject);
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        currentCollisions.Remove(collision.gameObject);
-    }
-
-
-    void OnTriggerStay2D(Collider2D coll)
-    {
-        if (Input.GetKey("space"))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            //bool find = false;
-            //int i = 0;
-            //while (!find || i < currentCollisions.Count)
-            //{
-            //var col = currentCollisions[i];
-             var entity = coll.gameObject.GetComponent<Entity>();
-                //if (entity == null)
-                //    i++;
-                if(entity != null)
+            int abc = 0;
+            var player = gameObject;
+            Collider2D[] damage = Physics2D.OverlapCircleAll(player.transform.position, 0);
+            for (int i = 0; i < damage.Length; i++)
+            {
+                var entity = damage[i].GetComponent<Entity>();
+                var mob = damage[i].GetComponent<Mob>();
+                if (entity != null && mob != null)
                 {
-                    //find = true;
-                    entity.OnKilled += () =>
+                    abc += 1;
+                    entity.Health -= 1f;
+                    entity.OnKilled = () =>
                     {
-                        currentCollisions.Remove(coll.gameObject);
-                        var mob = coll.gameObject.GetComponent<Mob>();
-                        if(mob != null)
+                        if (mob != null)
                         {
                             var exp = GetComponent<LevelSystem>();
                             exp.Experience += mob.Experience;
                         }
                     };
-                    //Debug.Log(entity.Health);
-
-                    //if (entity != null)
-                        entity.Health -= 1f;
-
-                    Debug.Log(entity.Health);
+                    return;
                 }
-            //}
+            }
         }
     }
 }
