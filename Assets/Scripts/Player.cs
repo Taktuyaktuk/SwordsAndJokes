@@ -87,35 +87,35 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKey("space"))
         {
-            bool find = false;
-            int i = 0;
-            while (!find || i < currentCollisions.Count)
-            {
-                var col = currentCollisions[i];
-                var entity = col.gameObject.GetComponent<Entity>();
-                if (entity == null)
-                    i++;
-                else
+            //bool find = false;
+            //int i = 0;
+            //while (!find || i < currentCollisions.Count)
+            //{
+            //var col = currentCollisions[i];
+             var entity = coll.gameObject.GetComponent<Entity>();
+                //if (entity == null)
+                //    i++;
+                if(entity != null)
                 {
-                    find = true;
+                    //find = true;
                     entity.OnKilled += () =>
                     {
-                        currentCollisions.Remove(col.gameObject);
-                        var mob = col.gameObject.GetComponent<Mob>();
+                        currentCollisions.Remove(coll.gameObject);
+                        var mob = coll.gameObject.GetComponent<Mob>();
                         if(mob != null)
                         {
                             var exp = GetComponent<LevelSystem>();
                             exp.Experience += mob.Experience;
                         }
                     };
-                    Debug.Log(entity.Health);
+                    //Debug.Log(entity.Health);
 
-                    if (entity != null)
+                    //if (entity != null)
                         entity.Health -= 1f;
 
                     Debug.Log(entity.Health);
                 }
-            }
+            //}
         }
     }
 }
