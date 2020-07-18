@@ -6346,7 +6346,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogBox: {fileID: 1109018722}
   dialogText: {fileID: 839846423}
-  dialog: 'Giant Chicken: If Giant Chicken isn''t surprise for you , go down and
+  dialog: 'Giant Chicken: If Giant Chicken isn''t frightening for you , go down and
     find Ultimate Evil...'
   playerInRange: 0
 --- !u!114 &869631645
@@ -13774,7 +13774,7 @@ MonoBehaviour:
   dialogBox: {fileID: 1109018722}
   dialogText: {fileID: 839846423}
   dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat only Chicken''s and Game
-    developer''s...Me not eat Humans...No hit me...Gugu...'
+    developer''s...Me not eat Humans...No hit me...Gugu...Hehe...Gulp....'
   playerInRange: 0
 --- !u!61 &2085581875
 BoxCollider2D:
