@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7217411551996557912}
   - component: {fileID: 7217411551996557914}
   - component: {fileID: 7217411551996557915}
+  - component: {fileID: 8849316608827795148}
   m_Layer: 0
   m_Name: Chicken_Left
-  m_TagString: Untagged
+  m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -231,3 +232,16 @@ CircleCollider2D:
   m_Offset: {x: 0.00000014901161, y: -0.48740268}
   serializedVersion: 2
   m_Radius: 0.44828653
+--- !u!114 &8849316608827795148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7217411551996557908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5fb82ccc53540abbde48e90190663d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialHealth: 2
