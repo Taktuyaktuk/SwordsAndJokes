@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Entity : MonoBehaviour
 {
     [SerializeField]
-    float InitialHealth = 3f;
+    float InitialHealth = 10f;
 
     private float health;
     public float Health
@@ -43,7 +43,8 @@ public class Entity : MonoBehaviour
 
     void Start()
     {
-        //Health = InitialHealth;
+        if (gameObject.tag == "Mob" || gameObject.tag == "Box")
+            Health = InitialHealth;
     }
 
     void Update()

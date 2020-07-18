@@ -108,8 +108,12 @@ public class Player : MonoBehaviour
                             exp.Experience += mob.Experience;
                         }
                     };
+                    Debug.Log(entity.Health);
+
                     if (entity != null)
                         entity.Health -= 1f;
+
+                    Debug.Log(entity.Health);
                 }
             }
         }
