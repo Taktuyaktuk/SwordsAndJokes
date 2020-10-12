@@ -20,6 +20,7 @@ GameObject:
   - component: {fileID: 7459801010215360498}
   - component: {fileID: 4563029859463710828}
   - component: {fileID: 5009846794068540231}
+  - component: {fileID: 1405404459782024600}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -260,6 +261,21 @@ MonoBehaviour:
     type: 3}
   BulletSpeed: 10
   ShootPoint: {x: 0, y: 0}
+--- !u!114 &1405404459782024600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162738581212936607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f77438bd2d153d249bb2832d2a73bc40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  KnocBackDirection: {x: 100, y: 0}
+  KnockBackPower: 20
+  spriteRenderer: {fileID: 0}
 --- !u!114 &4979766069390086106
 MonoBehaviour:
   m_ObjectHideFlags: 0
