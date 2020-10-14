@@ -19,7 +19,14 @@ public class Player : MonoBehaviour
     public Transform attackLocation;
     public float attackRange;
     public LayerMask enemies;
+    //do Dash
+    public float dashSpeed;
+    private float dashTime;
+    public float startDashTime;
+    private int direction;
 
+    public GameObject dashEffect;
+    //dotad
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
@@ -28,6 +35,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         //GetComponent<Entity>().OnKilled += () => Application.Quit();
+        dashTime = startDashTime; //<-- do Dash
+        
     }
 
     void Update()
@@ -42,20 +51,26 @@ public class Player : MonoBehaviour
 
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
-       
+
 
         if (Input.GetKey("space"))
         {
             StartCoroutine(AttackCo());
         }
-            //WalkingDirection = WalkingDirection.normalized;
+        //WalkingDirection = WalkingDirection.normalized;
 
-            WalkingDirection *= WalkingSpeed;
+        WalkingDirection *= WalkingSpeed;
 
         Rigidbody.velocity = WalkingDirection;
 
         this.Animator();
+        
+        this.Dash();
+
+        
+
     }
+    
 
     private IEnumerator AttackCo()
     {
@@ -73,6 +88,68 @@ public class Player : MonoBehaviour
         animator.SetFloat("Horizontal", move.x);
         animator.SetFloat("Vertical", move.y);
         animator.SetFloat("Speed", move.sqrMagnitude);
+    }
+
+    void Dash()
+    {
+        if (direction == 0)
+        {
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Mouse1))
+            {
+                Instantiate(dashEffect, transform.position, Quaternion.identity);
+                direction = 1;
+
+            }
+            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Mouse1))
+            {
+                Instantiate(dashEffect, transform.position, Quaternion.identity);
+                direction = 2;
+            }
+
+            else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1))
+            {
+                Instantiate(dashEffect, transform.position, Quaternion.identity);
+                direction = 3;
+            }
+
+            else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Mouse1)))
+            {
+                Instantiate(dashEffect, transform.position, Quaternion.identity);
+                direction = 4;
+            }
+
+        }
+        else
+        {
+            if (dashTime <= 0)
+            {
+                direction = 0;
+                dashTime = startDashTime;
+                Rigidbody.velocity = Vector2.zero;
+            }
+            else
+            {
+                dashTime -= Time.deltaTime;
+
+                if (direction == 1)
+                {
+                    Rigidbody.velocity = Vector2.left * dashSpeed;
+                }
+
+                else if (direction == 2)
+                {
+                    Rigidbody.velocity = Vector2.right * dashSpeed;
+                }
+                else if (direction == 3)
+                {
+                    Rigidbody.velocity = Vector2.up * dashSpeed;
+                }
+                else if (direction == 4)
+                {
+                    Rigidbody.velocity = Vector2.down * dashSpeed;
+                }
+            }
+        }
     }
     void Attack()
     {
