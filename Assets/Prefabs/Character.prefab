@@ -155,8 +155,8 @@ MonoBehaviour:
   enemies:
     serializedVersion: 2
     m_Bits: 0
-  dashSpeed: 1000
-  startDashTime: 2
+  dashSpeed: 20
+  startDashTime: 0.3
   dashEffect: {fileID: 6982498368276654725, guid: 1e2e2a1978d528145a2669bfa658963f,
     type: 3}
 --- !u!114 &4162738581212936597

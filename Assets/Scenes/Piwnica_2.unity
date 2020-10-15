@@ -7424,6 +7424,11 @@ PrefabInstance:
       propertyPath: startDashTime
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936602, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936607, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_Name
