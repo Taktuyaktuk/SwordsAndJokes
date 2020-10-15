@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 2748726699234049037}
   - component: {fileID: -4902484476368878386}
   m_Layer: 0
-  m_Name: BigRat
+  m_Name: Rat
   m_TagString: Mob
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +34,7 @@ Transform:
   m_GameObject: {fileID: 5721742925211353373}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 3.81, y: -3.95, z: 263.43027}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 50
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: d3e70bd0d94b74dd2ab12a842802fbf2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b5fb82ccc53540abbde48e90190663d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialHealth: 20
+  InitialHealth: 5
 --- !u!114 &5721742925211353374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -151,10 +151,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 625153c3b9b2d418699eb6232c970f5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 12
+  Speed: 8
   AttackDistance: 2
-  AttackDemage: 5
-  Experience: 3
+  AttackDemage: 1
+  Experience: 1
 --- !u!95 &2218717017218344553
 Animator:
   serializedVersion: 3
@@ -202,7 +202,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: -0.12711883}
   serializedVersion: 2
-  m_Radius: 0.7399157
+  m_Radius: 0.8728812
 --- !u!82 &-4902484476368878386
 AudioSource:
   m_ObjectHideFlags: 0
@@ -224,7 +224,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 15
+  MaxDistance: 16.529535
   Pan2D: 0
   rolloffMode: 2
   BypassEffects: 1
