@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &282700423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1719,6 +1719,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Mapa
+  playerPosition: {x: 7, y: -4}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &986163051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5365,6 +5367,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: -3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -2.4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16df10b93f953c428f840c9ce40887c, type: 3}
 --- !u!1001 &4771575204247303817
@@ -5407,12 +5425,12 @@ PrefabInstance:
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.35
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.31
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
@@ -5459,6 +5477,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936602, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 4162738581212936603, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_BodyType

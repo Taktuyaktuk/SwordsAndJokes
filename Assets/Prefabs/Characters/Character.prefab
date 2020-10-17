@@ -160,6 +160,7 @@ MonoBehaviour:
   startDashTime: 0.3
   dashEffect: {fileID: 6982498368276654725, guid: 1e2e2a1978d528145a2669bfa658963f,
     type: 3}
+  startingPosition: {fileID: 0}
 --- !u!114 &4162738581212936597
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +371,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.792116
+  orthographic size: 7
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

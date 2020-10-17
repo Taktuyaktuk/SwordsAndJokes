@@ -1668,6 +1668,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Mapa
+  playerPosition: {x: 28, y: 5.5}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &986163051
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1776,6 +1778,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936602, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 4162738581212936603, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_BodyType
@@ -3983,6 +3991,22 @@ PrefabInstance:
         type: 3}
       propertyPath: newScene
       value: Piwnica_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 2953821784485899255, guid: f16df10b93f953c428f840c9ce40887c,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -21.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f16df10b93f953c428f840c9ce40887c, type: 3}
