@@ -4258,6 +4258,22 @@ PrefabInstance:
       propertyPath: newScene
       value: Piwnica_1.2
       objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 13.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: -5.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088502, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: m_Name
@@ -5585,6 +5601,22 @@ PrefabInstance:
       propertyPath: newScene
       value: Piwnica
       objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerPosition.x
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerPosition.y
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088502, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: m_Name
@@ -5892,6 +5924,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936602, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 4162738581212936606, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_SortingOrder

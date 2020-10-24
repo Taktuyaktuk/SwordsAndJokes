@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Dungeon_Elements.meta
 guid: c0ea41d5f94b76f4f9c92a903050b54c
+=======
+guid: 1e3f743ae7be5734cbfa3b8e217995d0
+>>>>>>> 223c7276314ea80bb2ae46cf4edc044cbe7b0534:Assets/All_Elements/elements.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

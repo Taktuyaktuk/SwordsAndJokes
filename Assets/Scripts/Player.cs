@@ -27,6 +27,10 @@ public class Player : MonoBehaviour
 
     public GameObject dashEffect;
     //dotad
+
+    //start jarek 17.10.20
+    public VectorValue startingPosition;
+    //end
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
@@ -36,6 +40,9 @@ public class Player : MonoBehaviour
     {
         //GetComponent<Entity>().OnKilled += () => Application.Quit();
         dashTime = startDashTime; //<-- do Dash
+        //start jarek 17.10.20
+        transform.position = startingPosition.initialValue;
+        //end
         
     }
 

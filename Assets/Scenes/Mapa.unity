@@ -30888,6 +30888,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: House_1
+  playerPosition: {x: 1.5, y: -2.4}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &265348936
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -35133,6 +35135,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: House_3
+  playerPosition: {x: -19, y: -2}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &683617598
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -45478,6 +45482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: House_2
+  playerPosition: {x: 1.5, y: -2.5}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &1309771668
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48240,6 +48246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: House
+  playerPosition: {x: 0.25, y: -2}
+  playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!61 &1508223876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -57906,12 +57914,12 @@ PrefabInstance:
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.47
+      value: 0.19
       objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.81
+      value: 4.8
       objectReference: {fileID: 0}
     - target: {fileID: 4162738581212936601, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
@@ -57958,6 +57966,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4162738581212936602, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 4162738581212936603, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_BodyType
