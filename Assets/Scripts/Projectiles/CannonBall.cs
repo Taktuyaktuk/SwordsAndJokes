@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CannonBall : MonoBehaviour
 {
+    Player TargetPlayer;
+    [SerializeField]
+    float AttackDemage = 2f;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +21,14 @@ public class CannonBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(this.gameObject);
+        var player = collision.gameObject.GetComponent<Player>();
 
+        if (player != null)
+        {
+            TargetPlayer = player;
+            
+            TargetPlayer.GetComponent<Entity>().Health -= AttackDemage;
+            Destroy(this.gameObject);
+        }
     }
 }
