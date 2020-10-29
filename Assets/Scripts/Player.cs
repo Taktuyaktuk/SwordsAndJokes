@@ -27,6 +27,10 @@ public class Player : MonoBehaviour
 
     public GameObject dashEffect;
     //dotad
+   // start jarek 29.10
+    public float coolDownTime = 2;
+    private float nextDashTime = 0;
+    //end
 
     //start jarek 17.10.20
     public VectorValue startingPosition;
@@ -99,30 +103,34 @@ public class Player : MonoBehaviour
 
     void Dash()
     {
-        if (direction == 0)
+        if (direction == 0 && Time.time > nextDashTime)//29.10.20 jarek do dash cooldown
         {
             if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Mouse1))
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 1;
+                nextDashTime = Time.time + coolDownTime;//29.10.20 jarek do dash cooldown, w kazdym input,dla kazdego kierunku
 
             }
             else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Mouse1))
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 2;
+                nextDashTime = Time.time + coolDownTime;
             }
 
             else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1))
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 3;
+                nextDashTime = Time.time + coolDownTime;
             }
 
             else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Mouse1)))
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 4;
+                nextDashTime = Time.time + coolDownTime;
             }
 
         }

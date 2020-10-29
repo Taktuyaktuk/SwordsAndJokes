@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8035174663039800268}
   - component: {fileID: 1633953314014581527}
   - component: {fileID: 5971850037982473946}
+  - component: {fileID: -2249243047659134394}
   m_Layer: 0
   m_Name: CannonBallFire0.2
   m_TagString: Untagged
@@ -274,3 +275,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-2249243047659134394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5971850037982473947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c1d6d089554cc469f7641c0c4c7461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 2
