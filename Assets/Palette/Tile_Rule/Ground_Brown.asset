@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
-  m_Name: New Rule Tile
+  m_Name: Ground_Brown
   m_EditorClassIdentifier: 
   m_DefaultSprite: {fileID: -9105622256288295348, guid: c2a5cfcbf9d3aa540943fc7b0800de4d,
     type: 3}
