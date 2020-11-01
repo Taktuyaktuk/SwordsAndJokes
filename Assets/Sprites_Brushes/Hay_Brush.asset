@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: New Prefab Brush
+  m_Name: Hay_Brush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: 7c77077e6f0735a4c83a9abadafcdf2a, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -36,4 +36,5 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Prefab: {fileID: 0}
+  m_Prefab: {fileID: 2949681989054935835, guid: a75b9ddde8c0cae4ab0ceb3f2be3cbe0,
+    type: 3}
