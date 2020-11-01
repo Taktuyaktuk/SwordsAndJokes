@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: c56514f9521dd774bb490628f7b38335
 TextureImporter:
   internalIDToNameTable:
@@ -14,6 +15,11 @@ TextureImporter:
   - first:
       213: -4862007459847594908
     second: coin_3
+=======
+guid: 0406e4aeb4ad2d74fbeea76fe7086d30
+TextureImporter:
+  internalIDToNameTable: []
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -43,7 +49,11 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
+<<<<<<< HEAD
     filterMode: 0
+=======
+    filterMode: -1
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -52,12 +62,20 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
+<<<<<<< HEAD
   spriteMode: 2
+=======
+  spriteMode: 1
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
   spritePixelsToUnits: 16
+=======
+  spritePixelsToUnits: 100
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -76,6 +94,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
+<<<<<<< HEAD
     textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
@@ -89,6 +108,9 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
+=======
+    textureCompression: 1
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -97,6 +119,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
+<<<<<<< HEAD
     sprites:
     - serializedVersion: 2
       name: coin_0
@@ -182,6 +205,9 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+=======
+    sprites: []
+>>>>>>> e97fc8b1b84b7b12ac14123393037e9526d46c3f
     outline: []
     physicsShape: []
     bones: []
