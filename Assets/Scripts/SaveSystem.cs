@@ -22,10 +22,12 @@ public class SaveSystem : MonoBehaviour
 
         if (File.Exists(fileName))
         {
+            
+
             string jsonFromFile = File.ReadAllText(fileName);
             saveData = JsonUtility.FromJson<SaveData>(jsonFromFile);
             float hp = saveData.hp;
-            if ((Int32)saveData.hp == 0)
+            if ((Int32)saveData.hp <= 0)
                 hp = 10f;
             entity.Health = hp;
             lvl.Level = saveData.level;
