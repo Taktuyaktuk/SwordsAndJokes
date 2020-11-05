@@ -9,23 +9,30 @@ public class SliderHP : MonoBehaviour
     Slider mSlider;
     private float hp;
     private float lvl;
-    private void Start()
+    private void Awake()
     {
         FindObjectOfType<Player>().GetComponent<Entity>().OnHealthChanged += health =>
         {
             hp = health;
             setSliderValue();
+
         };
         FindObjectOfType<Player>().GetComponent<LevelSystem>().OnLevelUp += Level =>
         {
+           
             lvl = Level;
             setSliderValue();
+            
         };
     }
+
     private void setSliderValue()
     {
-        //Debug.Log(mSlider);
-        mSlider.maxValue = lvl*5f;
-        mSlider.value = hp*1f;
+       
+        mSlider.maxValue = lvl * 5f;
+       
+
+        
+        mSlider.value = hp * 1f;
     }
 }
