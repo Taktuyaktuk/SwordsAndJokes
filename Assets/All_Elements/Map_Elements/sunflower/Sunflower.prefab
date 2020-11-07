@@ -438,7 +438,6 @@ GameObject:
   m_Component:
   - component: {fileID: 315370941994812571}
   - component: {fileID: 7566211914922812193}
-  - component: {fileID: 5087350827999012131}
   m_Layer: 0
   m_Name: sunflower_animated_7
   m_TagString: Untagged
@@ -511,25 +510,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &5087350827999012131
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5821583891174409156}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7a3094f76ab92a84aade05692a442a16, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7334540556580189439
 GameObject:
   m_ObjectHideFlags: 0
