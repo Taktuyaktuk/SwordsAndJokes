@@ -72,6 +72,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: House
+  playerPosition: {x: 0, y: 0}
+  playerStorage: {fileID: 0}
 --- !u!1 &8966815035698342280
 GameObject:
   m_ObjectHideFlags: 0
