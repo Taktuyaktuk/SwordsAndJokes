@@ -48,19 +48,24 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if(SpellPref.Length > 0)
+            Debug.Log(SpellPref.Length );
+            Debug.Log(SpellPref);
+            if (SpellPref.Length > 0)
+
             {
                 Boolean isSpell = false;
                 for (int i = 1; i < 10; i++)
                 {
-                    if (i > SpellPref.Length)
-                        return;
+                    
+                    //if (i > SpellPref.Length)
+                        //return;
                     if (Input.GetKey(i.ToString()))
                     {
                         isSpell = true;
                         MagicShot(i);
                     }
                 }
+                Debug.Log(isSpell);
                 if (!isSpell)
                     Shoot();
             } else

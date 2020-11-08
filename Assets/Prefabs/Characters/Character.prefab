@@ -160,6 +160,7 @@ MonoBehaviour:
   startDashTime: 0.3
   dashEffect: {fileID: 6982498368276654725, guid: 1e2e2a1978d528145a2669bfa658963f,
     type: 3}
+  coolDownTime: 2
   startingPosition: {fileID: 0}
 --- !u!114 &4162738581212936597
 MonoBehaviour:
@@ -265,6 +266,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   BulletPref: {fileID: 7482356241870325637, guid: ce4d9bc44435dbd4db6c34bafd368806,
     type: 3}
+  SpellPref:
+  - {fileID: 1133232263329728731, guid: f6ab410742246514d9e0a4f4a447cf12, type: 3}
   BulletSpeed: 10
   ShootPoint: {x: 0, y: 0}
 --- !u!114 &1405404459782024600
@@ -727,7 +730,7 @@ PrefabInstance:
     - target: {fileID: 978165334835725340, guid: 1166b081d2286c047b9ac04b828d9257,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1209910004189854311, guid: 1166b081d2286c047b9ac04b828d9257,
         type: 3}

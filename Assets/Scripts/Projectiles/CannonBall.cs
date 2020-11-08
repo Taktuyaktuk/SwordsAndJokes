@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class CannonBall : MonoBehaviour
 {
-    
+
 
     Player TargetPlayer;
+    
     [SerializeField]
     float AttackDemage = 2f;
     
@@ -27,17 +28,21 @@ public class CannonBall : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        var player = collision.gameObject.GetComponent<Player>();
+       
 
-        if (player != null)
-        {
+
+          var player = collision.gameObject.GetComponent<Player>();
+
+          if (player != null)
+         {
             TargetPlayer = player;
-            
-            TargetPlayer.GetComponent<Entity>().Health -= AttackDemage;
-            Destroy(this.gameObject);
-            
+
+           TargetPlayer.GetComponent<Entity>().Health -= AttackDemage;
+           Destroy(this.gameObject);
+
         }
-      
+
     }
     
 }
+
