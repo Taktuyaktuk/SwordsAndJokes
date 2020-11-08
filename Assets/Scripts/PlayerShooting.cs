@@ -9,6 +9,12 @@ public class PlayerShooting : MonoBehaviour
     GameObject BulletPref;
 
     [SerializeField]
+    GameObject SpellPref;
+
+    [SerializeField]
+    Boolean NoLimitShots = false;
+
+    [SerializeField]
     float BulletSpeed = 2f;
 
     [SerializeField]
@@ -43,16 +49,17 @@ public class PlayerShooting : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) || Input.GetMouseButtonDown(0) && Input.GetKey("space"))
             Shoot();
     }
 
     void Shoot()
     {
-        if (Bullets < 1) return;
-        Bullets--;
+        if (Bullets < 1 && !NoLimitShots) return;
+        else Bullets--;
 
-        var bullet = Instantiate(BulletPref);
+        var pref = NoLimitShots ? SpellPref : BulletPref;
+        var bullet = Instantiate(pref);
         bullet.transform.position = transform.position + transform.rotation * (Vector3)ShootPoint;
         bullet.transform.rotation = bow.transform.rotation;
 
