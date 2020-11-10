@@ -30,7 +30,8 @@ private void OnCollisionEnter2D(Collision2D collision)
         TargetMob = mob;
 
         TargetMob.GetComponent<Entity>().Health -= AttackDemage;
-        
+
+            TargetMob.Speed *= 0.3f;
 
         Destroy(this.gameObject);
     }

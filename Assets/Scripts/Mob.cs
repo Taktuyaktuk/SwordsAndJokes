@@ -11,8 +11,8 @@ public class Mob : MonoBehaviour
 
     Animator animator;
 
-    [SerializeField]
-    float Speed = 1f;
+    
+    public float Speed = 1f;
 
     [SerializeField]
     float AttackDistance = 1f;
