@@ -31,7 +31,8 @@ private void OnCollisionEnter2D(Collision2D collision)
 
         TargetMob.GetComponent<Entity>().Health -= AttackDemage;
 
-            TargetMob.Speed *= 0.3f;
+        TargetMob.Speed *= 0.3f;
+        TargetMob.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0);
 
         Destroy(this.gameObject);
     }
