@@ -28,11 +28,8 @@ public class SliderHP : MonoBehaviour
 
     private void setSliderValue()
     {
-       
-        mSlider.maxValue = lvl * 5f;
-       
-
-        
-        mSlider.value = hp * 1f;
+        float max = lvl * 5f;
+        mSlider.maxValue = 100;
+        mSlider.value = ((hp * 1f) * 100) / max;
     }
 }
