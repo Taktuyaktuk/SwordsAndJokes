@@ -269,7 +269,6 @@ MonoBehaviour:
   SpellPref:
   - {fileID: 1133232263329728731, guid: f6ab410742246514d9e0a4f4a447cf12, type: 3}
   - {fileID: 1133232263329728731, guid: fb093f54f3e221340bab37eae6c090a6, type: 3}
-  - {fileID: 3261179696093311650, guid: 0a9412cf0a1b71b4abd7d4b084f28320, type: 3}
   BulletSpeed: 20
   ShootPoint: {x: 0, y: 0}
 --- !u!114 &1405404459782024600
