@@ -16,7 +16,7 @@ public class InventoryBP : MonoBehaviour
 
     private void Start()
     {
-        allSlots = 42;
+        allSlots = 40;
         slot = new GameObject[allSlots];
 
         for (int i =0; i < allSlots; i++)
