@@ -5352,12 +5352,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 326217485}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &377015902 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 724293698076159069, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &378789910
 GameObject:
   m_ObjectHideFlags: 0
@@ -5968,18 +5962,6 @@ Transform:
   m_Father: {fileID: 1303807013}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &605407635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 724293697375558695, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &625639711 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 724293696404066776, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &629097997 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7598259220254714334, guid: 8013e7269cca2094dbc971a889fcf455,
@@ -6285,18 +6267,6 @@ Transform:
   m_Father: {fileID: 776055135}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &839846423 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 724293696545889903, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &869631639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6507,8 +6477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1109018722}
-  dialogText: {fileID: 839846423}
+  dialogBox: {fileID: 1123496368}
+  dialogText: {fileID: 1123496367}
   dialog: 'Giant Chicken: If Giant Chicken isn''t frightening for you , go down and
     find Ultimate Evil...'
   playerInRange: 0
@@ -6541,6 +6511,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00000047683716}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!1 &890856844 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181775523333272414, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &935096771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6860,6 +6836,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1042932885 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181775523388921061, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1073906606
 GameObject:
   m_ObjectHideFlags: 0
@@ -6895,12 +6877,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1109018722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 724293697874974220, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1123496366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7415,6 +7391,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4, type: 3}
+--- !u!114 &1123496367 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6181775523247102802, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1123496368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181775524601353009, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1164254808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7520,6 +7514,12 @@ Transform:
   m_Father: {fileID: 1303807013}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1231438223 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181775524937279840, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1244724033
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8056,6 +8056,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1270192756}
     m_Modifications:
+    - target: {fileID: 722831704715014090, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 1824745215}
+    - target: {fileID: 722831704715014090, guid: e2e2b1a02a69db04190c22bc36c095cd,
+        type: 3}
+      propertyPath: slotHolder
+      value: 
+      objectReference: {fileID: 2140140269}
     - target: {fileID: 806784296664158519, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -8226,22 +8236,22 @@ PrefabInstance:
         type: 3}
       propertyPath: slots.Array.data[0]
       value: 
-      objectReference: {fileID: 605407635}
+      objectReference: {fileID: 1556010087}
     - target: {fileID: 4771575204991890608, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: slots.Array.data[1]
       value: 
-      objectReference: {fileID: 1932609645}
+      objectReference: {fileID: 890856844}
     - target: {fileID: 4771575204991890608, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: slots.Array.data[2]
       value: 
-      objectReference: {fileID: 625639711}
+      objectReference: {fileID: 1042932885}
     - target: {fileID: 4771575204991890608, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: slots.Array.data[3]
       value: 
-      objectReference: {fileID: 377015902}
+      objectReference: {fileID: 1231438223}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2e2b1a02a69db04190c22bc36c095cd, type: 3}
 --- !u!1 &1454869555
@@ -8296,6 +8306,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7598259220254714334, guid: 8013e7269cca2094dbc971a889fcf455,
     type: 3}
   m_PrefabInstance: {fileID: 2047331863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556010087 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6181775524565276954, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1582236994
 GameObject:
@@ -13789,6 +13805,12 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1824745215 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6901521589261211846, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1874500712
 GameObject:
   m_ObjectHideFlags: 0
@@ -14014,12 +14036,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8013e7269cca2094dbc971a889fcf455, type: 3}
---- !u!1 &1932609645 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 724293696460093027, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1123496366}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1956216506
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14389,8 +14405,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1109018722}
-  dialogText: {fileID: 839846423}
+  dialogBox: {fileID: 1123496368}
+  dialogText: {fileID: 1123496367}
   dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat only Chicken''s and Game
     developer''s...Me not eat Humans...No hit me...Gugu...Hehe...Gulp....'
   playerInRange: 0
@@ -14467,6 +14483,12 @@ Transform:
   m_Father: {fileID: 1073906607}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2140140269 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6901521588149987190, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1123496366}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1455319180538142767
 PrefabInstance:
   m_ObjectHideFlags: 0
