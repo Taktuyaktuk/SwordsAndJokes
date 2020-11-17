@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     Rigidbody2D Rigidbody;
     Collider2D Collider;
 
+    public InventoryObject inventory; // Jarek 17.11.20 do inventory
+
     public Transform attackLocation;
     public float attackRange;
     public LayerMask enemies;
@@ -48,6 +50,21 @@ public class Player : MonoBehaviour
         transform.position = startingPosition.initialValue;
         //end
         
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision) //jarek do inveotry 17.11.20
+    {
+        var item = collision.GetComponent<Items>();
+        if(item)
+        {
+            inventory.AddItem(item.item, 1);
+            Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        inventory.Container.Clear();
     }
 
     void Update()
