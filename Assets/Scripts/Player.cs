@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnApplicationQuit()
+    private void OnApplicationQuit()// jsrek do invetory 17.11
     {
         inventory.Container.Clear();
     }
