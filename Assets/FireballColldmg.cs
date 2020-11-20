@@ -8,6 +8,8 @@ public class FireballColldmg : MonoBehaviour
     Mob TargetMob;
     [SerializeField]
     float AttackDemage = 2f;
+    
+    
 
     public void OnTriggerEnter2D(Collider2D collision) //jarek do inveotry 17.11.20
     {
