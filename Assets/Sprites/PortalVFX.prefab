@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6495443053571669623}
   - component: {fileID: 6495443053571669622}
   m_Layer: 0
-  m_Name: Portal
+  m_Name: PortalVFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48,7 +48,10 @@ VisualEffect:
   m_ResetSeedOnPlay: 1
   m_PropertySheet:
     m_Float:
-      m_Array: []
+      m_Array:
+      - m_Value: 98551
+        m_Name: SpawnRate
+        m_Overridden: 1
     m_Vector2f:
       m_Array: []
     m_Vector3f:
