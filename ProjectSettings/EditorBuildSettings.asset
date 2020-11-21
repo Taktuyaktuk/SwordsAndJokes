@@ -38,4 +38,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Piwnica_2.unity
     guid: f9d763704f0a66e41ba13a9d59929916
+  - enabled: 1
+    path: Assets/Scenes/Dark_Forest.unity
+    guid: a81f778c7544ce44cb083389c5e2af28
   m_configObjects: {}
