@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 5336885763043911575}
   - component: {fileID: 4273536545500190235}
   - component: {fileID: 7851537808856213628}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Fire1Spell1
-  m_TagString: Untagged
+  m_TagString: PlayersProjectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

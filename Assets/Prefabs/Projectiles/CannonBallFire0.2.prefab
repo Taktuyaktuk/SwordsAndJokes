@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1633953314014581527}
   - component: {fileID: 5971850037982473946}
   - component: {fileID: -2249243047659134394}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: CannonBallFire0.2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
