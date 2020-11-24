@@ -1005,6 +1005,12 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3548953155474067380, guid: 1166b081d2286c047b9ac04b828d9257,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: d806e04449f1b2b458660614a0f5e043,
+        type: 3}
     - target: {fileID: 4251088131303271411, guid: 1166b081d2286c047b9ac04b828d9257,
         type: 3}
       propertyPath: m_SizeDelta.x
