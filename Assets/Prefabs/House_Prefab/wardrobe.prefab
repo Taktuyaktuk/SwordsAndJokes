@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 234570029893321563}
   - component: {fileID: 234570029893321565}
   - component: {fileID: 234570029893321564}
+  - component: {fileID: 6523010634768861850}
   m_Layer: 0
   m_Name: wardrobe
   m_TagString: Untagged
@@ -215,6 +216,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!210 &6523010634768861850
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 234570029893321561}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
 --- !u!1 &234570030311966615
 GameObject:
   m_ObjectHideFlags: 0
