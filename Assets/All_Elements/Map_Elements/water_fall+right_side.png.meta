@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: 34073c44dd3063840a3160ed23454adb
+guid: 330633e712d03bc40b05387bdebe5c34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 384098516371859054
-    second: water_fall_0
+      213: -5687880781133722970
+    second: water_fall+right_side_0
   - first:
-      213: -3535066195894958936
-    second: water_fall_1
+      213: -3276766720211177720
+    second: water_fall+right_side_1
   - first:
-      213: 2692922675154879413
-    second: water_fall_2
+      213: -995271987476115715
+    second: water_fall+right_side_2
   - first:
-      213: -3180815261456479812
-    second: water_fall_3
+      213: 1187232019031963305
+    second: water_fall+right_side_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -78,7 +78,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -90,7 +90,7 @@ TextureImporter:
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
-    crunchedCompression: 1
+    crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
@@ -99,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: water_fall_0
+      name: water_fall+right_side_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e66691bc097945500800000000000000
-      internalID: 384098516371859054
+      spriteID: 6aac0c3b0969011b0800000000000000
+      internalID: -5687880781133722970
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_fall_1
+      name: water_fall+right_side_1
       rect:
         serializedVersion: 2
         x: 16
@@ -134,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a48030460ce0fec0800000000000000
-      internalID: -3535066195894958936
+      spriteID: 80fadfd67069682d0800000000000000
+      internalID: -3276766720211177720
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_fall_2
+      name: water_fall+right_side_2
       rect:
         serializedVersion: 2
         x: 32
@@ -155,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b38334c7ee2f5520800000000000000
-      internalID: 2692922675154879413
+      spriteID: dfec69b86651032f0800000000000000
+      internalID: -995271987476115715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: water_fall_3
+      name: water_fall+right_side_3
       rect:
         serializedVersion: 2
         x: 48
@@ -176,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cb9ceb45f597bd3d0800000000000000
-      internalID: -3180815261456479812
+      spriteID: 9a6be582b35e97010800000000000000
+      internalID: 1187232019031963305
       vertices: []
       indices: 
       edges: []
