@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 1405404459782024600}
   - component: {fileID: 2298321359049527282}
   - component: {fileID: 8460824829528499130}
+  - component: {fileID: 6549616862237627860}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -399,6 +400,20 @@ SortingGroup:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
+--- !u!114 &6549616862237627860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4162738581212936607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f38510103aca88b4ebf29e7edb7f3083, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myprefab2: {fileID: 8342431112187132385, guid: e5877227e4e74374bad015b629a46c4b,
+    type: 3}
 --- !u!114 &4979766069390086106
 MonoBehaviour:
   m_ObjectHideFlags: 0
