@@ -2368,12 +2368,12 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 1249505780}
+      objectReference: {fileID: 0}
     - target: {fileID: 722831704715014090, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: slotHolder
       value: 
-      objectReference: {fileID: 1772722027}
+      objectReference: {fileID: 0}
     - target: {fileID: 806784297044689675, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -2863,12 +2863,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9235a5d5b1edf18478abcd2a346e1c61, type: 3}
---- !u!1 &1249505780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6901521589261211846, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1843523920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1280855646
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,7 +3421,7 @@ GameObject:
   - component: {fileID: 1768076245}
   - component: {fileID: 1768076244}
   - component: {fileID: 1768076255}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5681,12 +5675,6 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &1772722027 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6901521588149987190, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 1843523920}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1785301961 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1832315754313697789, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,

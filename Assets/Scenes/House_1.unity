@@ -359,12 +359,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 541966192}
---- !u!1 &213778984 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6901521589261211846, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 717224373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &224365280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2371379665110488485, guid: 129fcaa23a9fa674d8d18941a8ec542f,
@@ -1722,12 +1716,12 @@ PrefabInstance:
         type: 3}
       propertyPath: inventory
       value: 
-      objectReference: {fileID: 213778984}
+      objectReference: {fileID: 0}
     - target: {fileID: 722831704715014090, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: slotHolder
       value: 
-      objectReference: {fileID: 1163051475}
+      objectReference: {fileID: 0}
     - target: {fileID: 806784297044689675, guid: e2e2b1a02a69db04190c22bc36c095cd,
         type: 3}
       propertyPath: m_LocalPosition.z
@@ -1959,12 +1953,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38ac33649b3d17949b25c7e57f6e4699, type: 3}
---- !u!1 &1163051475 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6901521588149987190, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
-    type: 3}
-  m_PrefabInstance: {fileID: 717224373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1192596415 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6181775524937279840, guid: bae1c4c50d94ae340a2c2b8c1d71fbe4,
@@ -2290,7 +2278,7 @@ GameObject:
   - component: {fileID: 1768076245}
   - component: {fileID: 1768076244}
   - component: {fileID: 1768076246}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
