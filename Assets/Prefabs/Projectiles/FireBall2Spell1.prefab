@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 1284370193909780281}
   - component: {fileID: 8689250414077484503}
   - component: {fileID: 8689250414077484496}
+  - component: {fileID: -3451063806271684108}
   m_Layer: 0
   m_Name: FireBall2Spell1
   m_TagString: Untagged
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AttackDemage: 0.5
   myprefab: {fileID: 973489929188048176, guid: 9a1524ca3bfbc56408ae4f8b7d8a160d, type: 3}
-  myprefab2: {fileID: 4211819504375600708, guid: bf2a73f85284c6e42b1e6d3e246e1b6f,
+  myprefab2: {fileID: 7755213073140751427, guid: 1416b41ee4d6e8841a3d6419858857e9,
     type: 3}
 --- !u!58 &1284370193909780281
 CircleCollider2D:
@@ -208,3 +209,14 @@ VFXRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!210 &-3451063806271684108
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8689250414077484498}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 4
