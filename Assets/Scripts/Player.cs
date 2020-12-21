@@ -4,6 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Entity))]
+[RequireComponent(typeof(Mana))]
 [RequireComponent(typeof(LevelSystem))]
 public class Player : MonoBehaviour
 {

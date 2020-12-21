@@ -3,13 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Mana))]
 public class PlayerShooting : MonoBehaviour
 {
     [SerializeField]
     GameObject BulletPref;
-
-    [SerializeField]
-    GameObject[] SpellPref;
 
     [SerializeField]
     float BulletSpeed = 2f;
@@ -17,6 +15,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     Vector2 ShootPoint;
 
+    [SerializeField]
     Bow bow;
 
     private int bullets;
@@ -31,8 +30,11 @@ public class PlayerShooting : MonoBehaviour
                 OnBulletsChanged.Invoke(bullets);
         }
     }
-
     public event Action<int> OnBulletsChanged;
+
+    [SerializeField]
+    GameObject[] SpellPref;
+    List<float> spellConfig = new List<float> { 2, 4, 4, 5 };
 
     private void Awake()
     {
@@ -48,24 +50,18 @@ public class PlayerShooting : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Debug.Log(SpellPref.Length );
-            Debug.Log(SpellPref);
             if (SpellPref.Length > 0)
 
             {
                 Boolean isSpell = false;
                 for (int i = 1; i < 10; i++)
                 {
-                    
-                    //if (i > SpellPref.Length)
-                        //return;
                     if (Input.GetKey(i.ToString()))
                     {
                         isSpell = true;
                         MagicShot(i);
                     }
                 }
-                Debug.Log(isSpell);
                 if (!isSpell)
                     Shoot();
             } else
@@ -88,6 +84,14 @@ public class PlayerShooting : MonoBehaviour
 
     void MagicShot(int index)
     {
+        var mana = GetComponent<Mana>();
+        float _valueMana = mana.ManaValue;
+        float spellMana = spellConfig[index - 1];
+        if (spellMana > _valueMana)
+            return;
+
+        mana.ManaValue -= spellMana;
+
         var bullet = Instantiate(SpellPref[index - 1]);
         bullet.transform.position = transform.position + transform.rotation * (Vector3)ShootPoint;
         bullet.transform.rotation = bow.transform.rotation;
