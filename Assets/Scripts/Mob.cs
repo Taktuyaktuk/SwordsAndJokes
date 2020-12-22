@@ -11,7 +11,6 @@ public class Mob : MonoBehaviour
 
     Animator animator;
 
-    
     public float Speed = 1f;
 
     [SerializeField]
@@ -19,7 +18,6 @@ public class Mob : MonoBehaviour
 
     [SerializeField]
     float AttackDemage = 2f;
-
 
     public int Experience = 1;
 
@@ -35,7 +33,6 @@ public class Mob : MonoBehaviour
         while (true)
         {
             TargetPosition = (Vector2)transform.position + Random.insideUnitCircle * 10f;
-
             yield return new WaitForSeconds(Random.Range(5, 10));
         }
     }
@@ -44,7 +41,6 @@ public class Mob : MonoBehaviour
     {
         UpdateMovement();
         UpdateAttack();
-        
     }
 
     void UpdateMovement()
@@ -55,7 +51,6 @@ public class Mob : MonoBehaviour
             TargetPosition = TargetPlayer.transform.position;
             targetSpeed *= 2f;
         }
-
         var direction = (Vector3)TargetPosition - transform.position;
         var targetVelocity = direction.normalized * targetSpeed / 2f;
         Rigidbody.velocity = Vector3.Lerp(
@@ -77,15 +72,12 @@ public class Mob : MonoBehaviour
             return;
 
         TargetPlayer.GetComponent<Entity>().Health -= AttackDemage * Time.deltaTime;
-        
-        
         animator.SetBool("Attack",true);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<Player>();
-
         if (player != null)
             TargetPlayer = player;
     }
@@ -93,7 +85,6 @@ public class Mob : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         var player = collision.gameObject.GetComponent<Player>();
-
         if (player != null)
             TargetPlayer = null;
     }

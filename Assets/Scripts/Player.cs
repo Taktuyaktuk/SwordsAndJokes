@@ -81,7 +81,6 @@ public class Player : MonoBehaviour
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
 
-
         if (Input.GetKey("space"))
         {
             StartCoroutine(AttackCo());
@@ -93,11 +92,7 @@ public class Player : MonoBehaviour
         Rigidbody.velocity = WalkingDirection;
 
         this.Animator();
-        
         this.Dash();
-
-        
-
     }
     
 
@@ -106,7 +101,6 @@ public class Player : MonoBehaviour
         animator.SetBool("Atacking", true);
         yield return null;
         animator.SetBool("Atacking",false);
-        
     }
     void Animator()
     {
@@ -128,7 +122,6 @@ public class Player : MonoBehaviour
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 1;
                 nextDashTime = Time.time + coolDownTime;//29.10.20 jarek do dash cooldown, w kazdym input,dla kazdego kierunku
-
             }
             else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Mouse1))
             {
@@ -136,7 +129,6 @@ public class Player : MonoBehaviour
                 direction = 2;
                 nextDashTime = Time.time + coolDownTime;
             }
-
             else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1))
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
@@ -150,7 +142,6 @@ public class Player : MonoBehaviour
                 direction = 4;
                 nextDashTime = Time.time + coolDownTime;
             }
-
         }
         else
         {
@@ -163,24 +154,14 @@ public class Player : MonoBehaviour
             else
             {
                 dashTime -= Time.deltaTime;
-
                 if (direction == 1)
-                {
                     Rigidbody.velocity = Vector2.left * dashSpeed;
-                }
-
                 else if (direction == 2)
-                {
                     Rigidbody.velocity = Vector2.right * dashSpeed;
-                }
                 else if (direction == 3)
-                {
                     Rigidbody.velocity = Vector2.up * dashSpeed;
-                }
                 else if (direction == 4)
-                {
                     Rigidbody.velocity = Vector2.down * dashSpeed;
-                }
             }
         }
     }

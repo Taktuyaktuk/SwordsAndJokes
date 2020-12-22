@@ -23,19 +23,11 @@ public class Mana : MonoBehaviour
         }
     }
 
-
     public Action<float> OnManaChanged;
 
-    // Start is called before the first frame update
     void Start()
     {
         InvokeRepeating("CheckMana", 10f, 10f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void CheckMana()

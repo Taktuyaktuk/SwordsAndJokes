@@ -46,9 +46,4 @@ public class Entity : MonoBehaviour
         if (gameObject.tag == "Mob" || gameObject.tag == "Box")
             Health = InitialHealth;
     }
-
-    void Update()
-    {
-        
-    }
 }
