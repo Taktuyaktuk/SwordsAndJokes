@@ -15,14 +15,11 @@ public class SliderHP : MonoBehaviour
         {
             hp = health;
             setSliderValue();
-
         };
         FindObjectOfType<Player>().GetComponent<LevelSystem>().OnLevelUp += Level =>
         {
-           
             lvl = Level;
             setSliderValue();
-            
         };
     }
 

@@ -41,7 +41,7 @@ public class Entity : MonoBehaviour
     public Action<float> OnHealthChanged;
     public Action OnKilled;
 
-    void Start()
+    void Awake()
     {
         if (gameObject.tag == "Mob" || gameObject.tag == "Box")
             Health = InitialHealth;
