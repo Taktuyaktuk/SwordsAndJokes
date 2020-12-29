@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7755213073140751429}
   - component: {fileID: 7755213073140751428}
   - component: {fileID: 9187902369834293068}
+  - component: {fileID: -7375211775979460262}
   m_Layer: 0
   m_Name: Firering2
   m_TagString: Untagged
@@ -150,3 +151,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifeTime: 1
+--- !u!114 &-7375211775979460262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7755213073140751427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db76c7776a1cc184fbac4968b73aa6dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  visualEffect: {fileID: 7755213073140751430}
+  size: 0
