@@ -27,7 +27,7 @@ public class VfxControlfireball1 : MonoBehaviour
 
         if (size >= 2.2f)
         {
-            size = 0;
+            size = 2.2f;
         }
         visualEffect.SetFloat("size", size);
     }
