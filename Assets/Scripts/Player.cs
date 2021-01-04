@@ -115,28 +115,28 @@ public class Player : MonoBehaviour
 
     void Dash()
     {
-        if (direction == 0 && Time.time > nextDashTime)//29.10.20 jarek do dash cooldown
+        if (direction == 0 )//29.10.20 jarek do dash cooldown
         {
-            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Mouse1))
+            if (Input.GetKey(KeyCode.A) && Input.GetKey(KeyCode.Mouse1) && Time.time > nextDashTime)
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 1;
                 nextDashTime = Time.time + coolDownTime;//29.10.20 jarek do dash cooldown, w kazdym input,dla kazdego kierunku
             }
-            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Mouse1))
+            else if (Input.GetKey(KeyCode.D) && Input.GetKey(KeyCode.Mouse1) && Time.time > nextDashTime)
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 2;
                 nextDashTime = Time.time + coolDownTime;
             }
-            else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1))
+            else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1) && Time.time > nextDashTime)
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 3;
                 nextDashTime = Time.time + coolDownTime;
             }
 
-            else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Mouse1)))
+            else if ((Input.GetKey(KeyCode.S) && Input.GetKey(KeyCode.Mouse1)) && Time.time > nextDashTime)
             {
                 Instantiate(dashEffect, transform.position, Quaternion.identity);
                 direction = 4;
