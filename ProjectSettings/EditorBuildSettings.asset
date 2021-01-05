@@ -44,4 +44,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestowyForest.unity
     guid: 93e253c2564dcd1429acdf4ecb3b7cd1
+  - enabled: 1
+    path: Assets/Scenes/Cave.unity
+    guid: a7d86abe6cec95b468d46b6b7575a984
   m_configObjects: {}

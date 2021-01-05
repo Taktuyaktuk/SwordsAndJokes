@@ -170,6 +170,12 @@ TextureImporter:
   - first:
       213: 7975215821686231901
     second: rocks_border_19
+  - first:
+      213: -6109867342151249372
+    second: rocks_border_20
+  - first:
+      213: -7120980076646418934
+    second: rocks_border_21
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -374,15 +380,25 @@ TextureImporter:
       name: rocks_border_5
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 128
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: -11, y: -16}
+        - {x: 11, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
+      physicsShape:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -16}
+        - {x: 16, y: -16}
+        - {x: 16, y: 16}
       tessellationDetail: 0
       bones: []
       spriteID: fafd0e2047abd67d0800000000000000
@@ -395,14 +411,18 @@ TextureImporter:
       name: rocks_border_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 96
+        x: 64
+        y: 128
         width: 32
         height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
+      outline:
+      - - {x: -16, y: 16}
+        - {x: -16, y: -12}
+        - {x: -16, y: -12}
+        - {x: -16, y: 16}
       physicsShape: []
       tessellationDetail: 0
       bones: []
@@ -416,8 +436,8 @@ TextureImporter:
       name: rocks_border_7
       rect:
         serializedVersion: 2
-        x: 32
-        y: 96
+        x: 96
+        y: 128
         width: 32
         height: 32
       alignment: 0
@@ -437,7 +457,7 @@ TextureImporter:
       name: rocks_border_8
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 96
         width: 32
         height: 32
@@ -458,7 +478,7 @@ TextureImporter:
       name: rocks_border_9
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 96
         width: 32
         height: 32
@@ -479,8 +499,8 @@ TextureImporter:
       name: rocks_border_10
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -509,8 +529,8 @@ TextureImporter:
       name: rocks_border_11
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -536,7 +556,7 @@ TextureImporter:
       name: rocks_border_12
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 32
         height: 32
@@ -571,7 +591,7 @@ TextureImporter:
       name: rocks_border_13
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 64
         width: 32
         height: 32
@@ -601,8 +621,8 @@ TextureImporter:
       name: rocks_border_14
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -623,7 +643,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 32
+        y: 64
         width: 32
         height: 32
       alignment: 0
@@ -644,7 +664,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -664,8 +684,8 @@ TextureImporter:
       name: rocks_border_17
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -685,7 +705,7 @@ TextureImporter:
       name: rocks_border_18
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
         width: 32
         height: 32
@@ -706,7 +726,7 @@ TextureImporter:
       name: rocks_border_19
       rect:
         serializedVersion: 2
-        x: 96
+        x: 32
         y: 0
         width: 32
         height: 32
@@ -719,6 +739,48 @@ TextureImporter:
       bones: []
       spriteID: d53deaa0988adae60800000000000000
       internalID: 7975215821686231901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocks_border_20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42290561604653ba0800000000000000
+      internalID: -6109867342151249372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rocks_border_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a063bde49523d2d90800000000000000
+      internalID: -7120980076646418934
       vertices: []
       indices: 
       edges: []
