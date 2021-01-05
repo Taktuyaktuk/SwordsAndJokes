@@ -62,14 +62,25 @@ public class Mob : MonoBehaviour
 
     void UpdateAttack()   
     {
+        animator.SetBool("Attack", false);
+
+        float dist = Vector3.Distance(FindObjectOfType<Player>().transform.position, transform.position);
+        Debug.Log("Dist");
+        Debug.Log(dist);
+
+        if (dist < 7)
+            TargetPlayer = FindObjectOfType<Player>();
+        else
+            TargetPlayer = null;
+
         if (TargetPlayer == null)
             return;
 
-        var distance = (TargetPlayer.transform.position - transform.position).magnitude;
-        animator.SetBool("Attack", false);
+        // var distance = (TargetPlayer.transform.position - transform.position).magnitude;
 
-        if (distance > AttackDistance)
-            return;
+
+        //if (distance > AttackDistance)
+        //    return;
 
         TargetPlayer.GetComponent<Entity>().Health -= AttackDemage * Time.deltaTime;
         animator.SetBool("Attack",true);
