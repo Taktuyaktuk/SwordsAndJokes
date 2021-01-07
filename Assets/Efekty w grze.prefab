@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7062593361483587750}
   - component: {fileID: 6949852872268070418}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Efekty w grze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
