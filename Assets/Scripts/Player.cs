@@ -72,8 +72,20 @@ public class Player : MonoBehaviour
     {
         this.UpdateMovement();
         this.Attack();
+        this.Save_Load();// Jarek do inventory 07.01.20201
     }
 
+    private void Save_Load()
+    {
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            inventory.Save();
+        }
+        if(Input.GetKeyDown(KeyCode.L))
+        {
+            inventory.Load();
+        }
+    }
     void UpdateMovement()
     {
         var WalkingDirection = Vector3.zero;
