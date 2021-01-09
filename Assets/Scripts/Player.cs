@@ -55,17 +55,17 @@ public class Player : MonoBehaviour
 
     public void OnTriggerEnter2D(Collider2D collision) //jarek do inveotry 17.11.20
     {
-        var item = collision.GetComponent<Items>();
+        var item = collision.GetComponent<GroundItem>();
         if(item)
         {
-            inventory.AddItem(item.item, 1);
+            inventory.AddItem(new Item(item.item), 1);
             Destroy(collision.gameObject);
         }
     }
 
    // private void OnApplicationQuit()// jsrek do invetory 17.11
     //{
-    //    inventory.Container.Clear();
+    //    inventory.Container.Items.Clear();
    // }
 
     void Update()

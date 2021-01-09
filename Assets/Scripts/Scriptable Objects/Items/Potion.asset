@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1fe05ff34c374124fbd600dda159acdd, type: 3}
   m_Name: Potion
   m_EditorClassIdentifier: 
-  prefab: {fileID: 6526892453872504217, guid: c349be7d15e9bf045972d310f2d17a1f, type: 3}
+  Id: 1
+  uiDisplay: {fileID: 21300000, guid: 18ecad6116317c143bb3be2542523485, type: 3}
   type: 0
   description: Drink and get high!
   restoreHealthValue: 16
