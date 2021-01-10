@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e55a0bfe641629c44a3396b1c147d781, type: 3}
   m_Name: Sword 2
   m_EditorClassIdentifier: 
-  prefab: {fileID: 0}
+  Id: 4
+  uiDisplay: {fileID: 21300000, guid: 4e1b995bb0127ca4fa1ca92a7bdc33db, type: 3}
   type: 1
   description: Every Knight need a sword! ( even garbage one)
   atkBonus: 10
