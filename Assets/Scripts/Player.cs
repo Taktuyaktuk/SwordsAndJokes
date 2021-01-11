@@ -63,10 +63,10 @@ public class Player : MonoBehaviour
         }
     }
 
-   // private void OnApplicationQuit()// jsrek do invetory 17.11
-    //{
-    //    inventory.Container.Items.Clear();
-   // }
+    private void OnApplicationQuit()// jsrek do invetory 17.11
+    {
+        inventory.Container.Items.Clear();
+    }
 
     void Update()
     {
