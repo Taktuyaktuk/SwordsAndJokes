@@ -17,5 +17,12 @@ MonoBehaviour:
   type: 1
   description: maybe not every knight need a shield but you will undestand , why
     you should use it, when you will be knocked down!
-  atkBonus: 0
-  defenceBonus: 12
+  buffs:
+  - attribute: 0
+    value: 0
+    min: 5
+    max: 12
+  - attribute: 0
+    value: 0
+    min: 4
+    max: 20

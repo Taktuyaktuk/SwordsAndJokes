@@ -16,4 +16,8 @@ MonoBehaviour:
   uiDisplay: {fileID: 21300000, guid: 18ecad6116317c143bb3be2542523485, type: 3}
   type: 0
   description: Drink and get high!
-  restoreHealthValue: 16
+  buffs:
+  - attribute: 0
+    value: 0
+    min: 5
+    max: 15
