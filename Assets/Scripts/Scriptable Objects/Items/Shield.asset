@@ -13,16 +13,18 @@ MonoBehaviour:
   m_Name: Shield
   m_EditorClassIdentifier: 
   Id: 2
-  uiDisplay: {fileID: 21300000, guid: 51d4fbb870595314ead83f1bc9936412, type: 3}
+  uiDisplay: {fileID: 21300000, guid: 463c6cd1ef0c8574ab2f77081a8e3abc, type: 3}
   type: 1
-  description: maybe not every knight need a shield but you will undestand , why
+  description: 'Maybe not every knight need a shield but you will undestand , why
     you should use it, when you will be knocked down!
+
+'
   buffs:
-  - attribute: 0
+  - attribute: 3
     value: 0
     min: 5
     max: 12
-  - attribute: 0
+  - attribute: 2
     value: 0
     min: 4
     max: 20

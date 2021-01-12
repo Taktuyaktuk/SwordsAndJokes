@@ -17,7 +17,7 @@ MonoBehaviour:
   type: 1
   description: Every Knight need a sword! ( even garbage one)
   buffs:
-  - attribute: 0
+  - attribute: 1
     value: 0
     min: 6
     max: 16

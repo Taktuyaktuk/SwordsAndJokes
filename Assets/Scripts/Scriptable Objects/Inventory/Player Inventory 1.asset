@@ -15,4 +15,106 @@ MonoBehaviour:
   savePath: /playerInventory.save1
   database: {fileID: 11400000, guid: bf4dea5865d44404b9af9f6ed133642d, type: 2}
   Container:
-    Items: []
+    Items:
+    - ID: 0
+      item:
+        Name: Coins
+        Id: 0
+        buffs: []
+      amount: 21
+    - ID: 3
+      item:
+        Name: Sword 1
+        Id: 3
+        buffs:
+        - attribute: 3
+          value: 5
+          min: 5
+          max: 10
+        - attribute: 0
+          value: 7
+          min: 3
+          max: 12
+      amount: 1
+    - ID: 4
+      item:
+        Name: Sword 2
+        Id: 4
+        buffs:
+        - attribute: 1
+          value: 12
+          min: 6
+          max: 16
+      amount: 1
+    - ID: 2
+      item:
+        Name: Shield
+        Id: 2
+        buffs:
+        - attribute: 3
+          value: 6
+          min: 5
+          max: 12
+        - attribute: 2
+          value: 5
+          min: 4
+          max: 20
+      amount: 1
+    - ID: 1
+      item:
+        Name: Potion
+        Id: 1
+        buffs: []
+      amount: 3
+    - ID: 4
+      item:
+        Name: Sword 2
+        Id: 4
+        buffs:
+        - attribute: 1
+          value: 14
+          min: 6
+          max: 16
+      amount: 1
+    - ID: 2
+      item:
+        Name: Shield
+        Id: 2
+        buffs:
+        - attribute: 3
+          value: 6
+          min: 5
+          max: 12
+        - attribute: 2
+          value: 6
+          min: 4
+          max: 20
+      amount: 1
+    - ID: 3
+      item:
+        Name: Sword 1
+        Id: 3
+        buffs:
+        - attribute: 3
+          value: 6
+          min: 5
+          max: 10
+        - attribute: 0
+          value: 9
+          min: 3
+          max: 12
+      amount: 1
+    - ID: 2
+      item:
+        Name: Shield
+        Id: 2
+        buffs:
+        - attribute: 3
+          value: 7
+          min: 5
+          max: 12
+        - attribute: 2
+          value: 15
+          min: 4
+          max: 20
+      amount: 1

@@ -13,12 +13,12 @@ MonoBehaviour:
   m_Name: Sword 1
   m_EditorClassIdentifier: 
   Id: 3
-  uiDisplay: {fileID: -5922003876340782507, guid: 7641f27c10d4e7647b42c864829c63a4,
-    type: 3}
+  uiDisplay: {fileID: 21300000, guid: 0b8bceae19a8106438e51429c7ec4882, type: 3}
   type: 1
-  description: Every Knight need a sword! ( even garbage one)
+  description: Every Knight need a sword! (hmm... just a bit bether then wooden sword...
+    )
   buffs:
-  - attribute: 0
+  - attribute: 3
     value: 0
     min: 5
     max: 10
