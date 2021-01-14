@@ -181,7 +181,6 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            int abc = 0;
             var player = gameObject;
             Collider2D[] damage = Physics2D.OverlapCircleAll(player.transform.position, 0);
             for (int i = 0; i < damage.Length; i++)
@@ -190,8 +189,9 @@ public class Player : MonoBehaviour
                 var mob = damage[i].GetComponent<Mob>();
                 if (entity != null && mob != null)
                 {
-                    abc += 1;
-                    entity.Health -= 1f;
+                    float level = gameObject.GetComponent<LevelSystem>().Level;
+                    float str = gameObject.GetComponent<PlayerStats>().Strength;
+                    entity.Health -= ((level * 0.5f) + (str * 0.5f));
                     entity.OnKilled = () =>
                     {
                         if (mob != null)

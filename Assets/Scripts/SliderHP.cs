@@ -8,25 +8,24 @@ public class SliderHP : MonoBehaviour
     [SerializeField]
     Slider mSlider;
     private float hp;
-    private float lvl;
+    private float maxHp;
     private void Awake()
     {
+        FindObjectOfType<Player>().GetComponent<Entity>().OnMaxHealthChanged += hp =>
+        {
+            maxHp = hp;
+            setSliderValue();
+        };
         FindObjectOfType<Player>().GetComponent<Entity>().OnHealthChanged += health =>
         {
             hp = health;
-            setSliderValue();
-        };
-        FindObjectOfType<Player>().GetComponent<LevelSystem>().OnLevelUp += Level =>
-        {
-            lvl = Level;
             setSliderValue();
         };
     }
 
     private void setSliderValue()
     {
-        float max = lvl * 5f;
         mSlider.maxValue = 100;
-        mSlider.value = ((hp * 1f) * 100) / max;
+        mSlider.value = ((hp * 1f) * 100) / maxHp;
     }
 }

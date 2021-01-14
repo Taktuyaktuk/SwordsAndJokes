@@ -42,6 +42,7 @@ public class LevelSystem : MonoBehaviour
             level = value;
             if (OnLevelUp != null)
                 OnLevelUp.Invoke(Level);
+            gameObject.GetComponent<Entity>().setToMax();
         }
     }
 
