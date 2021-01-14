@@ -65,7 +65,7 @@ public class Player : MonoBehaviour
 
     private void OnApplicationQuit()// jsrek do invetory 17.11
     {
-        inventory.Container.Items.Clear();
+        inventory.Container.Items = new InventorySlot[28];
     }
 
     void Update()
