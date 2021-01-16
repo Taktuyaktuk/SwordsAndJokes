@@ -130,10 +130,4 @@ public class DisplayInventory : MonoBehaviour
     }
 }
 
-public class MouseItem
-{
-    public GameObject obj;
-    public InventorySlot item;
-    public InventorySlot hoverItem;
-    public GameObject hoverObj;
-}
+
