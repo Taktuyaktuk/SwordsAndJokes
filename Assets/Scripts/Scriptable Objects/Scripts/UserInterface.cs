@@ -92,10 +92,10 @@ public abstract class UserInterface : MonoBehaviour
     {
         var itemOnMouse = player.mouseItem;
         var mouseHoverItem = itemOnMouse.hoverItem;
-        var mouseHoverObj = itemOnMouse.hoverObj;
+        var mouseHoberObj = itemOnMouse.hoverObj;
         var GetItemObject = inventory.database.GetItem;
 
-        if (mouseHoverObj)
+        if (mouseHoberObj)
         {
             if(mouseHoverItem.CanPlaceInSlot(GetItemObject[itemsDisplayed[obj].ID]))
             inventory.MoveItem(itemsDisplayed[obj],mouseHoverItem.parent.itemsDisplayed[itemOnMouse.hoverObj]);
