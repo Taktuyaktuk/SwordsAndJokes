@@ -18,7 +18,6 @@ public class Player : MonoBehaviour
     Collider2D Collider;
 
     public InventoryObject inventory; // Jarek 17.11.20 do inventory
-    public MouseItem mouseItem = new MouseItem();//jarek 16.01.21 do inventory
     public Transform attackLocation;
     public float attackRange;
     public LayerMask enemies;

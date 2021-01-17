@@ -12,8 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e50912708cc0a234c9629111836ea9ac, type: 3}
   m_Name: Coins
   m_EditorClassIdentifier: 
-  Id: 0
   uiDisplay: {fileID: 7675826601332790545, guid: c56514f9521dd774bb490628f7b38335,
     type: 3}
-  type: 2
+  stackable: 1
+  type: 7
   description: Just metal fragment? try to live without money!
+  data:
+    Name: 
+    Id: 0
+    buffs: []
