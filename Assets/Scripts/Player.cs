@@ -17,7 +17,8 @@ public class Player : MonoBehaviour
     Rigidbody2D Rigidbody;
     Collider2D Collider;
 
-    public InventoryObject inventory; // Jarek 17.11.20 do inventory
+    public InventoryObject inventory;
+    public InventoryObject equipment;// Jarek 17.11.20 do inventory
     public Transform attackLocation;
     public float attackRange;
     public LayerMask enemies;
@@ -57,14 +58,21 @@ public class Player : MonoBehaviour
         var item = collision.GetComponent<GroundItem>();
         if(item)
         {
-            inventory.AddItem(new Item(item.item), 1);
-            Destroy(collision.gameObject);
+            Item _item = new Item(item.item);
+            if (inventory.AddItem(_item, 1))
+            {
+                Destroy(collision.gameObject);
+            }
+    
         }
     }
 
+    
+
     private void OnApplicationQuit()// jsrek do invetory 17.11
     {
-        inventory.Container.Items = new InventorySlot[28];
+        inventory.Container.Clear();
+        equipment.Container.Clear();
     }
 
     void Update()
@@ -79,10 +87,12 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.K))
         {
             inventory.Save();
+            equipment.Save();
         }
         if(Input.GetKeyDown(KeyCode.L))
         {
             inventory.Load();
+            equipment.Load();
         }
     }
     void UpdateMovement()
