@@ -144,6 +144,7 @@ public class Player : MonoBehaviour
     public void AttributeModified(Attribute attribute) // Do inventory
     {
         Debug.Log(string.Concat(attribute.type, "was updated! Value is now ", attribute.value.ModifiedValue));
+        gameObject.GetComponent<PlayerStats>().UpdateInventoryStats();
     }
     
 

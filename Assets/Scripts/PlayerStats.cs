@@ -5,12 +5,17 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    //public Attribute[] attributes;
+    private float InventoryStr = 0;
+    private float InventoryAgi = 0;
+    private float InventoryVit = 0;
+    private float InventoryInt = 0;
     private float strength;
     public float Strength
     {
         get
         {
-            return strength;
+            return strength + InventoryStr;
         }
         set
         {
@@ -26,7 +31,7 @@ public class PlayerStats : MonoBehaviour
     {
         get
         {
-            return agility;
+            return agility + InventoryAgi;
         }
         set
         {
@@ -42,7 +47,7 @@ public class PlayerStats : MonoBehaviour
     {
         get
         {
-            return vitality;
+            return vitality + InventoryVit;
         }
         set
         {
@@ -58,7 +63,7 @@ public class PlayerStats : MonoBehaviour
     {
         get
         {
-            return intelligence;
+            return intelligence + InventoryInt;
         }
         set
         {
@@ -68,4 +73,37 @@ public class PlayerStats : MonoBehaviour
         }
     }
     public Action<float> OnIntelligenceChanged;
+
+    public void UpdateInventoryStats()
+    {
+        var attributes = gameObject.GetComponent<Player>().attributes;
+        for (int i = 0; i < attributes.Length; i++)
+        {
+            switch (attributes[i].type.ToString())
+            {
+                case "Agility":
+                    InventoryAgi = attributes[i].value.ModifiedValue;
+                    if (OnAgilityChanged != null)
+                        OnAgilityChanged.Invoke(InventoryAgi + agility);
+                    break;
+                case "Intelect":
+                    InventoryInt = attributes[i].value.ModifiedValue;
+                    if (OnIntelligenceChanged != null)
+                        OnIntelligenceChanged.Invoke(InventoryInt + intelligence);
+                    break;
+                case "Stamina":
+                    InventoryVit = attributes[i].value.ModifiedValue;
+                    if (OnVitalityChanged != null)
+                        OnVitalityChanged.Invoke(InventoryVit + vitality);
+                    break;
+                case "Strenghth":
+                    InventoryStr = attributes[i].value.ModifiedValue;
+                    if (OnStrengthChanged != null)
+                        OnStrengthChanged.Invoke(InventoryStr + strength);
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 }
