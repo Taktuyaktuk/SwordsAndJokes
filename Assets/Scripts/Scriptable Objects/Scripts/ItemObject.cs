@@ -68,7 +68,7 @@ public class Item
 }
 
 [System.Serializable]
-public class ItemBuff 
+public class ItemBuff : IModifier
 {
 public Attributes attribute;
     public int value;
@@ -84,5 +84,10 @@ public Attributes attribute;
     public void GenerateValue()
     {
         value = UnityEngine.Random.Range(min, max);
+    }
+
+    public void AddValue(ref int baseValue)
+    {
+        baseValue += value;
     }
 }
