@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2d5751a2c961df945a34295ccf5e576d, type: 3}
-  m_Name: RockLavaBrush
+  m_Name: RockGreenBrush
   m_EditorClassIdentifier: 
   m_Cells:
   - m_Tile: {fileID: 11400000, guid: 19758e1dff796f14cb286e0c09538297, type: 2}
