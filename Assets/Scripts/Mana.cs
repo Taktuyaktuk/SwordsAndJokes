@@ -48,7 +48,7 @@ public class Mana : MonoBehaviour
     void CheckMana()
     {
         if (mana < maxMana)
-            mana += 1;
+            mana += 10;
     }
 
     void CountMaxValue()
