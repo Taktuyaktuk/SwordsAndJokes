@@ -14,6 +14,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Attack();
+        }
+
+
         //Input
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
@@ -27,5 +34,10 @@ public class PlayerMovement : MonoBehaviour
     {
         //Movement
         rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    }
+
+    void Attack()
+    {
+        animator.SetTrigger("Attack");
     }
 }
