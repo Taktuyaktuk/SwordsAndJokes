@@ -20,7 +20,8 @@ public class CannonBall : MonoBehaviour
     {
         m_rigidbody2d = GetComponent<Rigidbody2D>();
         Physics2D.IgnoreLayerCollision(14, 15);
-        Physics2D.IgnoreLayerCollision(14, 14);
+        Physics2D.IgnoreLayerCollision(14, 14); 
+        Physics2D.IgnoreLayerCollision(4, 4);
     }
 
     // Update is called once per frame
