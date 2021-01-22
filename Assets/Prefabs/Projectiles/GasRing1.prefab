@@ -150,3 +150,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 8006886518090523142, guid: 4485130275d50c749ad69674b17b2808, type: 3}
+  prefab2: {fileID: 2346490855584244019, guid: 47415b5ed55d8c44294ea33d83865baf, type: 3}

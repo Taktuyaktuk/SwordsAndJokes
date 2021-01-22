@@ -14,7 +14,7 @@ public class AoeDmgRandom : MonoBehaviour
 
        Position = gameObject.transform.position;
 
-       var randomInt = Random.Range(0, 400);
+       var randomInt = Random.Range(0, 300);
         
         if (randomInt == 199 && playerInRange == true)
 

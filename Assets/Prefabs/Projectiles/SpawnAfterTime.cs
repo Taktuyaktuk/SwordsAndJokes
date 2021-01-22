@@ -5,6 +5,7 @@ using UnityEngine;
 public class SpawnAfterTime : MonoBehaviour
 {
     public GameObject prefab;
+    public GameObject prefab2;
   
     Vector2 Position;
 
@@ -22,6 +23,7 @@ public class SpawnAfterTime : MonoBehaviour
     void Spawn()
     {
         Instantiate(prefab, Position, Quaternion.identity);
+        Instantiate(prefab2, Position, Quaternion.identity);
         Destroy(this.gameObject);
     }
    
