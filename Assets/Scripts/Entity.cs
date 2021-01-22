@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class Entity : MonoBehaviour
 {
     [SerializeField]
-    float InitialHealth = 10f;
+    public float InitialHealth = 10f;
 
     private bool flagA = false;
     private bool flagB = false;

@@ -15,6 +15,7 @@ public class ChestInteraction : MonoBehaviour
             ObjPosition = gameObject.transform.position;
             Instantiate(LootPrefab, ObjPosition, Quaternion.identity);
             Destroy(this.gameObject);
+          
         }
     }
 

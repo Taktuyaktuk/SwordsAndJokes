@@ -24,8 +24,8 @@ public class HitMark : MonoBehaviour
         //gameObject.GetComponent<Entity>().OnHealthChanged += health =>
         //{
         //    hp = health;
-        
-       // };
+
+        // };
     }
 
     private void Update()
@@ -40,10 +40,10 @@ public class HitMark : MonoBehaviour
         {
             Position1 = transform.position;
             Instantiate(myprefab2, Position1, Quaternion.identity);
-           // Destroy(prefabclone);
+            // Destroy(prefabclone);
 
 
-           
+
             lasthp = hp;
         }
 
