@@ -21,6 +21,15 @@ public class Quest
     [SerializeField]
     private KillObjective[] _killObjectives;
 
+    [SerializeField]
+    private int _level;
+
+    [SerializeField]
+    private int _xp;
+
+    [SerializeField]
+    private int _gold;
+
     public string Title
     {
         get
@@ -57,6 +66,42 @@ public class Quest
         get
         {
             return _killObjectives;
+        }
+    }
+
+    public int Level
+    {
+        get
+        {
+            return _level;
+        }
+        set
+        {
+            _level = value;
+        }
+    }
+
+    public int Xp
+    {
+        get
+        {
+            return _xp;
+        }
+        set
+        {
+            _xp = value;
+        }
+    }
+
+    public int Gold
+    {
+        get
+        {
+            return _gold;
+        }
+        set
+        {
+            _gold = value;
         }
     }
 }
