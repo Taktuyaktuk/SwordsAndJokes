@@ -93,6 +93,7 @@ MonoBehaviour:
   questPref_: {fileID: 4425299912273282176, guid: 26744375c175046448815589a835ecd4,
     type: 3}
   questList_: {fileID: 1884675005851734800}
+  questDescription: {fileID: 1884675006013919668}
 --- !u!1 &1884675005321667529
 GameObject:
   m_ObjectHideFlags: 0

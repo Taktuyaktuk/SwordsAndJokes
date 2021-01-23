@@ -11,7 +11,9 @@ public class QuestDialog : MonoBehaviour
     [SerializeField]
     private Transform questList_;
 
-    private Quest selectedQuest_;
+    //private Quest selectedQuest_;
+    [SerializeField]
+    private Text questDescription;
 
     private static QuestDialog instance_;
     public static QuestDialog Instance
@@ -47,7 +49,17 @@ public class QuestDialog : MonoBehaviour
 
     public void DisplayQuestDescription(Quest quest)
     {
-        selectedQuest_ = quest;
-        Debug.Log(quest);
+        //string title = quest.Title;
+        string description = quest.Description;
+        string questGoal = "";
+        foreach(Objective obj in quest.Collect)
+        {
+            questGoal += "Zbierz:\n" + obj.Type + ": " + obj.CurrentAmout + "/" + obj.Amount; 
+        }
+        foreach (Objective obj in quest.Kill)
+        {
+            questGoal += "Zabij:\n" + obj.Type + ": " + obj.CurrentAmout + "/" + obj.Amount;
+        }
+        questDescription.text = string.Format("{0}\nZadanie:\n{1}", description, questGoal);
     }
 }

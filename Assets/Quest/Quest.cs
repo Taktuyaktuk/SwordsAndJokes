@@ -25,10 +25,10 @@ public class Quest
     private int _gold;
 
     [SerializeField]
-    private CollectObjective[] _collectObjectives;
+    private CollectObjective[] _collect;
 
     [SerializeField]
-    private KillObjective[] _killObjectives;
+    private KillObjective[] _kill;
 
     public string Title
     {
@@ -58,14 +58,14 @@ public class Quest
     {
         get
         {
-            return _collectObjectives;
+            return _collect;
         }
     }
     public KillObjective[] Kill
     {
         get
         {
-            return _killObjectives;
+            return _kill;
         }
     }
 
