@@ -50,4 +50,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Lava.unity
     guid: 6da844f8643ef9b46b8dcbc46baed38b
+  - enabled: 1
+    path: Assets/Scenes/Domki + Piwnice/House_Red/Piwnicapierwsza.unity
+    guid: 09b87625dd0373f41bf3e6254ab520fb
   m_configObjects: {}
