@@ -54,14 +54,14 @@ public class Quest
         }
     }
 
-    public CollectObjective[] CollectObjectives
+    public CollectObjective[] Collect
     {
         get
         {
             return _collectObjectives;
         }
     }
-    public KillObjective[] KillObjectives
+    public KillObjective[] Kill
     {
         get
         {

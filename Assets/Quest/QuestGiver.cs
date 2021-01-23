@@ -4,7 +4,17 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
+    [SerializeField]
+    private Quest[] quests;
 
     [SerializeField]
-    private Quest[] quests; 
+    private QuestDialog questDialog;
+
+    private void Awake()
+    {
+        foreach(Quest quest in quests)
+        {
+            questDialog.RenderQuestList(quest);
+        }
+    }
 }
