@@ -10,6 +10,7 @@ public class SliderHPMob : MonoBehaviour
     Slider mSlider;
     private float hp;
     private float max;
+    [SerializeField]
     private GameObject _character;
     private void Awake()
     {
