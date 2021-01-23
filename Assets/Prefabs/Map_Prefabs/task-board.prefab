@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8373865783680401398}
   - component: {fileID: 2564586361166717812}
   - component: {fileID: 4244231043554115710}
+  - component: {fileID: 5998192272287559949}
   m_Layer: 0
   m_Name: task-board
   m_TagString: Untagged
@@ -149,3 +150,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 3797715387463291954, guid: 67a1f2612342aa14a801915703172494, type: 3}
+--- !u!114 &5998192272287559949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4853847213590273240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9000e285f14554c82820a2d678df34a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - _title: Pierwszy quest
+    _description: Opis do pierwszego questu 1
+    _level: 1
+    _xp: 0
+    _gold: 0
+    _collectObjectives: []
+    _killObjectives: []
+  - _title: Drugi quest
+    _description: Opis do drugeigo questu 2
+    _level: 2
+    _xp: 0
+    _gold: 0
+    _collectObjectives: []
+    _killObjectives: []
+  - _title: Trzeci quest
+    _description: Opis do trzeciego questu 3
+    _level: 3
+    _xp: 0
+    _gold: 0
+    _collectObjectives: []
+    _killObjectives: []
+  questDialog: {fileID: 0}
