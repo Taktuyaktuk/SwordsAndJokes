@@ -16,12 +16,6 @@ public class Quest
     private string _description;
 
     [SerializeField]
-    private CollectObjective[] _collectObjectives;
-
-    [SerializeField]
-    private KillObjective[] _killObjectives;
-
-    [SerializeField]
     private int _level;
 
     [SerializeField]
@@ -29,6 +23,12 @@ public class Quest
 
     [SerializeField]
     private int _gold;
+
+    [SerializeField]
+    private CollectObjective[] _collectObjectives;
+
+    [SerializeField]
+    private KillObjective[] _killObjectives;
 
     public string Title
     {
