@@ -30,6 +30,7 @@ public class Mana : MonoBehaviour
     }
 
     public Action<float> OnManaChanged;
+    public Action<float> OnMaxManaChanged;
 
     void Start()
     {
@@ -54,5 +55,6 @@ public class Mana : MonoBehaviour
     void CountMaxValue()
     {
         maxMana = 10f + (Level * 0.8f) + Stats;
+        OnMaxManaChanged.Invoke(maxMana);
     }
 }
