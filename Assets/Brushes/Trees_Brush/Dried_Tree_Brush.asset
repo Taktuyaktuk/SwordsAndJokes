@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Dried_Tree_Brush
   m_EditorClassIdentifier: 
   m_Cells:
-  - m_Tile: {fileID: 0}
+  - m_Tile: {fileID: 11400000, guid: 073cb96960e5acb4da812da5010e7cba, type: 2}
     m_Matrix:
       e00: 1
       e01: 0
@@ -36,4 +36,4 @@ MonoBehaviour:
   m_Pivot: {x: 0, y: 0, z: 0}
   m_CanChangeZPosition: 0
   m_Anchor: {x: 0.5, y: 0.5, z: 0.5}
-  m_Prefab: {fileID: 0}
+  m_Prefab: {fileID: 691369222405160515, guid: f838d26c0d889704fa4188c5aa61619e, type: 3}
