@@ -35,7 +35,7 @@ public class QuestDialog : MonoBehaviour
 
     public void Open()
     {
-        Debug.Log("OPEN");
+        gameObject.SetActive(true);
     }
 
     public void RenderQuestList(Quest quest)
@@ -49,7 +49,6 @@ public class QuestDialog : MonoBehaviour
 
     public void DisplayQuestDescription(Quest quest)
     {
-        //string title = quest.Title;
         string description = quest.Description;
         string questGoal = "";
         foreach(Objective obj in quest.Collect)
@@ -60,6 +59,6 @@ public class QuestDialog : MonoBehaviour
         {
             questGoal += "Zabij:\n" + obj.Type + ": " + obj.CurrentAmout + "/" + obj.Amount;
         }
-        questDescription.text = string.Format("{0}\nZadanie:\n{1}", description, questGoal);
+        questDescription.text = string.Format("{0}\n{1}", description, questGoal);
     }
 }

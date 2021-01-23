@@ -159,6 +159,12 @@ public class Player : MonoBehaviour
         this.UpdateMovement();
         this.Attack();
         this.Save_Load();// Jarek do inventory 07.01.20201
+
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            //gameObject.GetComponent<QuestDialog>().Open();
+            QuestDialog.Instance.Open();
+        }
     }
 
     private void Save_Load()
