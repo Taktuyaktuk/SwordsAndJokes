@@ -11,7 +11,7 @@ public class Entity : MonoBehaviour
 
     private bool flagA = false;
     private bool flagB = false;
-    private float maxHealth = 500f;
+    private float maxHealth = 10f;
     Vector2 position;
     [SerializeField]
     GameObject prefab;
@@ -78,7 +78,6 @@ public class Entity : MonoBehaviour
         }
         if (gameObject.tag == "Player")
         {
-            Health = 500f;
             gameObject.GetComponent<LevelSystem>().OnLevelUp += Level => {
                 CountMaxValue();
             };
@@ -93,7 +92,7 @@ public class Entity : MonoBehaviour
     {
         float Lvl = gameObject.GetComponent<LevelSystem>().Level;
         float Stats = gameObject.GetComponent<PlayerStats>().Vitality;
-        //maxHealth = 10f + (Lvl * 1f) + Stats;
+        maxHealth = 10f + (Lvl * 1f) + Stats;
         if (health > maxHealth)
             Health = maxHealth;
         OnMaxHealthChanged.Invoke(maxHealth);
