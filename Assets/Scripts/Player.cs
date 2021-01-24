@@ -150,8 +150,8 @@ public class Player : MonoBehaviour
 
     private void OnApplicationQuit()// jsrek do invetory 17.11
     {
-        inventory.Container.Clear();
-        equipment.Container.Clear();
+        //inventory.Container.Clear();
+        //equipment.Container.Clear();
     }
 
     void Update()
