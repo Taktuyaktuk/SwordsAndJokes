@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/All_Elements/Map_Elements/Animations.meta
 guid: 110fec2d7b5ac9f449fe5e83882314b5
+=======
+guid: 4cf29a6d662d09448877d937a56d8901
+>>>>>>> 8d14105a8020adeedcb8559c709404b3c6ea64b7:Assets/All_Elements/elements.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
