@@ -29,7 +29,7 @@ public class SaveSystem : MonoBehaviour
             float hp = saveData.hp;
             if ((Int32)saveData.hp <= 0)
                 hp = saveData.level*5f;
-            entity.Health = hp;
+            //entity.Health = hp;
             lvl.Level = saveData.level;
             lvl.Experience = saveData.exp;
             ps.Bullets = saveData.bullets;
@@ -44,7 +44,7 @@ public class SaveSystem : MonoBehaviour
         }
         else
         {
-            entity.Health = 5;
+            entity.Health = 500;
             lvl.Level = 1;
             lvl.Experience = 0;
             ps.Bullets = 5;
