@@ -35,6 +35,7 @@ public class QuestDialog : MonoBehaviour
 
     public void Open()
     {
+        Debug.Log("OPEN");
         gameObject.SetActive(true);
     }
 

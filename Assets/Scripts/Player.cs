@@ -39,10 +39,14 @@ public class Player : MonoBehaviour
 
     //start jarek 17.10.20
     public VectorValue startingPosition;
+
+    QuestDialog el;
     //end
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
+        el = QuestDialog.Instance;
+        el.Close();
     }
 
     void Start()
@@ -156,15 +160,13 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.O))
+        {
+            el.Open();
+        }
         this.UpdateMovement();
         this.Attack();
         this.Save_Load();// Jarek do inventory 07.01.20201
-
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            //gameObject.GetComponent<QuestDialog>().Open();
-            QuestDialog.Instance.Open();
-        }
     }
 
     private void Save_Load()
