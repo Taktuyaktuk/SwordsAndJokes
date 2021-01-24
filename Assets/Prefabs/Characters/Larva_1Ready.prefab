@@ -13,7 +13,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mSlider: {fileID: 826342826826697264}
-  _character: {fileID: 2224722009127651419}
 --- !u!1 &2224722009127651419
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 20
+  prefab: {fileID: 8572293953042856697, guid: ef972e132716f6249851d850ca469adb, type: 3}
 --- !u!114 &2224722009127651414
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,6 +12,9 @@ public class Entity : MonoBehaviour
     private bool flagA = false;
     private bool flagB = false;
     private float maxHealth = 10f;
+    Vector2 position;
+    [SerializeField]
+    GameObject prefab;
     public float MaxHealth
     {
         get
@@ -46,8 +49,15 @@ public class Entity : MonoBehaviour
                 if (OnKilled != null)
                     OnKilled.Invoke();
 
-                if(gameObject.tag == "Mob" || gameObject.tag == "Box")
+                if (gameObject.tag == "Mob" || gameObject.tag == "Box")
+                {
+
+                    position = gameObject.transform.position;
+                    Instantiate(prefab, position, Quaternion.identity);
                     Destroy(gameObject);
+                    
+
+                }
                 else
                     SceneManager.LoadScene("Dead");
             }
