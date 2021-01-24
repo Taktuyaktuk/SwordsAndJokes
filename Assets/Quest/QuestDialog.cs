@@ -59,6 +59,6 @@ public class QuestDialog : MonoBehaviour
         {
             questGoal += "Zabij:\n" + obj.Type + ": " + obj.CurrentAmout + "/" + obj.Amount;
         }
-        questDescription.text = string.Format("{0}\n\n{1}", description, questGoal);
+        questDescription.text = string.Format("{0}\n\nWymagania:\nLevel: {1}\n\nNagroda: {2}XP\n\n{3}", description, quest.Level, quest.Xp, questGoal);
     }
 }
