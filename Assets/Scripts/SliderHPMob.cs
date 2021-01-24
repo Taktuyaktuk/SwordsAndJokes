@@ -8,29 +8,34 @@ public class SliderHPMob : MonoBehaviour
 {
     [SerializeField]
     Slider mSlider;
+    //[SerializeField]
+    private GameObject _character;
     private float hp;
     private float max;
-    [SerializeField]
-    private GameObject _character;
+    private Entity entity;
     private void Awake()
     {
         Init();
-        _character.GetComponent<Entity>().OnHealthChanged += health =>
-        {
-            hp = health;
-            setSliderValue();
-        };
     }
     private void Init()
     {
         _character = gameObject.transform.parent.gameObject.transform.parent.gameObject;
-        max = _character.GetComponent<Entity>().Health;
-        hp = _character.GetComponent<Entity>().Health;
+        entity = _character.GetComponent<Entity>();
+        hp = entity.Health;
+        max = entity.MaxHealth;
+        entity.OnMaxHealthChanged += health =>
+        {
+            setSliderValue();
+        };
+        entity.OnHealthChanged += health =>
+        {
+            setSliderValue();
+        };
         setSliderValue();
     }
     private void setSliderValue()
     {
         mSlider.maxValue = 100;
-        mSlider.value = ((hp * 1f) * 100) / max;
+        mSlider.value = ((entity.Health * 1f) * 100) / entity.MaxHealth;
     }
 }

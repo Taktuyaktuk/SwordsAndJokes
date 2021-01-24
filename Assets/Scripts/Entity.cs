@@ -62,7 +62,10 @@ public class Entity : MonoBehaviour
     void Awake()
     {
         if (gameObject.tag == "Mob" || gameObject.tag == "Box")
+        {
+            maxHealth = InitialHealth;
             Health = InitialHealth;
+        }
         if (gameObject.tag == "Player")
         {
             gameObject.GetComponent<LevelSystem>().OnLevelUp += Level => {

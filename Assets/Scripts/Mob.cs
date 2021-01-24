@@ -65,8 +65,8 @@ public class Mob : MonoBehaviour
         animator.SetBool("Attack", false);
 
         float dist = Vector3.Distance(FindObjectOfType<Player>().transform.position, transform.position);
-        Debug.Log("Dist");
-        Debug.Log(dist);
+        //Debug.Log("Dist");
+        //Debug.Log(dist);
 
         if (dist < 7)
             TargetPlayer = FindObjectOfType<Player>();
