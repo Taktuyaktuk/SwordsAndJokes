@@ -265,6 +265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 5
+  prefab: {fileID: 0}
 --- !u!58 &4771575204991890610
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -444,13 +445,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1506d539bb0bc4527a7c2b5ddcdbbc84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attributes:
-  - type: 0
-  - type: 0
-  - type: 0
-  - type: 0
-  - type: 0
-  - type: 0
 --- !u!114 &4979766069390086106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -458,7 +452,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4168108143436367439}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9f58f3146933a4d0fad3a7951dfe4308, type: 3}
   m_Name: 

@@ -275,6 +275,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+		animator.SetTrigger("Attack");
             var player = gameObject;
             Collider2D[] damage = Physics2D.OverlapCircleAll(player.transform.position, 0);
             for (int i = 0; i < damage.Length; i++)
