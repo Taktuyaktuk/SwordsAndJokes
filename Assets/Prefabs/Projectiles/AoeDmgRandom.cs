@@ -14,13 +14,13 @@ public class AoeDmgRandom : MonoBehaviour
 
        Position = gameObject.transform.position;
 
-       var randomInt = Random.Range(0, 300);
+       var randomInt = Random.Range(0, 150);
         
-        if (randomInt == 199 && playerInRange == true)
+        if (randomInt == 149&& playerInRange == true)
 
         {
             Instantiate(Prefab,Position,Quaternion.identity);
-            Destroy(this.gameObject);
+           // Destroy(this.gameObject);
         }
     }
 
