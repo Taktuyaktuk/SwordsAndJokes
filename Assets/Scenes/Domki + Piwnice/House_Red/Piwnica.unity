@@ -5944,6 +5944,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 642423201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &664737496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6228926752821193390, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &731290083 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3231105414287030215, guid: 5c796121e32231346b6c1c66f5022d66,
@@ -6481,8 +6487,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 452270546}
+  dialogText: {fileID: 1681928279}
   dialog: 'Giant Chicken: If Giant Chicken isn''t frightening for you , go down and
     find Ultimate Evil...'
   playerInRange: 0
@@ -6498,7 +6504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405e06b5f1f0d4e27bea3a08ca1ab052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1460047863}
 --- !u!58 &869631646
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -6515,6 +6521,12 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.00000047683716}
   serializedVersion: 2
   m_Radius: 2.5
+--- !u!1 &903199387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6228926752998247701, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &935096771
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7363,6 +7375,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1314967840}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1318979108 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6228926753529632555, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1326972595
 GameObject:
   m_ObjectHideFlags: 0
@@ -7617,6 +7635,26 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: slots.Array.data[0]
+      value: 
+      objectReference: {fileID: 1706323911}
+    - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: slots.Array.data[1]
+      value: 
+      objectReference: {fileID: 903199387}
+    - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: slots.Array.data[2]
+      value: 
+      objectReference: {fileID: 664737496}
+    - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: slots.Array.data[3]
+      value: 
+      objectReference: {fileID: 1318979108}
     - target: {fileID: 4306717810561611413, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -7687,6 +7725,18 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5961456865376899786, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: bca2d0489555ed34ea85662b72253af2,
+        type: 2}
+    - target: {fileID: 5961456865376899786, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: equipment
+      value: 
+      objectReference: {fileID: 11400000, guid: 3e74010fb4a5dad4e9d18df800a6d358,
+        type: 2}
     - target: {fileID: 6832283323327819139, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_Name
@@ -7717,6 +7767,12 @@ PrefabInstance:
 --- !u!4 &1460047862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1334605111715722807, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1460047861}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1460047863 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4441112961072317076, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
     type: 3}
   m_PrefabInstance: {fileID: 1460047861}
   m_PrefabAsset: {fileID: 0}
@@ -13347,6 +13403,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1706323911 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6228926753997481809, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1811593613
 GameObject:
   m_ObjectHideFlags: 0
@@ -13913,7 +13975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 405e06b5f1f0d4e27bea3a08ca1ab052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 0}
+  text: {fileID: 1460047863}
 --- !u!70 &2085581873
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
