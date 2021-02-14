@@ -692,7 +692,7 @@ Transform:
   - {fileID: 1975973175}
   - {fileID: 274898025}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &274898024
 PrefabInstance:
@@ -709,7 +709,7 @@ PrefabInstance:
     - target: {fileID: 1334605111715722807, guid: a3748f2b84da3ea47aec2a582b061f4f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4246707
+      value: 2.424671
       objectReference: {fileID: 0}
     - target: {fileID: 1334605111715722807, guid: a3748f2b84da3ea47aec2a582b061f4f,
         type: 3}
@@ -1367,6 +1367,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384235371}
   m_CullTransparentMesh: 0
+--- !u!95 &406467707 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 8226923727278379343, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1975973174}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &468364767
 GameObject:
   m_ObjectHideFlags: 0
@@ -3970,7 +3976,7 @@ PrefabInstance:
     - target: {fileID: 2237780667595788006, guid: 074c88da9fad23944b04f1dc121f7e7e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2237780667595788006, guid: 074c88da9fad23944b04f1dc121f7e7e,
         type: 3}
@@ -6282,6 +6288,17 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5961456865376899786, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5961456865376899786, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: startingPosition
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 6832283323327819139, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_Name
@@ -6306,6 +6323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8226923727278379343, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 348d9c25fdb572d4f9315f0fe3e8b07b, type: 3}
@@ -6435,7 +6457,7 @@ PlayableDirector:
   m_InitialTime: 0
   m_SceneBindings:
   - key: {fileID: -5938240557238752780, guid: 048c871bf3c1a004a8d9477e8f8d1b3c, type: 2}
-    value: {fileID: 0}
+    value: {fileID: 406467707}
   - key: {fileID: 5278018871099223827, guid: 048c871bf3c1a004a8d9477e8f8d1b3c, type: 2}
     value: {fileID: 2145067388}
   - key: {fileID: 8235847428322637390, guid: 048c871bf3c1a004a8d9477e8f8d1b3c, type: 2}
