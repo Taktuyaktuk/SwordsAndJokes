@@ -40,19 +40,26 @@ public class Player : MonoBehaviour
     //start jarek 17.10.20
     public VectorValue startingPosition;
     //end
+
+    private bool IsLoaded = false;
+    private bool IsSaved = false;
     private void Awake()
     {
         Rigidbody = GetComponent<Rigidbody2D>();
+        
     }
 
     void Start()
     {
+        IsLoaded = true;
         //GetComponent<Entity>().OnKilled += () => Application.Quit();
         dashTime = startDashTime; //<-- do Dash
         //start jarek 17.10.20
         transform.position = startingPosition.initialValue;
         //end
+
         
+
         for (int i = 0; i < attributes.Length; i++)
         {
             attributes[i].SetParent(this);
@@ -150,6 +157,9 @@ public class Player : MonoBehaviour
 
     private void OnApplicationQuit()// jsrek do invetory 17.11
     {
+        //IsSaved = true;
+       // inventory.Load();
+       // equipment.Load();
         //inventory.Container.Clear();
         //equipment.Container.Clear();
     }
@@ -166,18 +176,24 @@ public class Player : MonoBehaviour
             QuestDialog.Instance.Open();
         }
     }
-
+    private void LateUpdate()
+    {
+        IsSaved = true;
+    }
     private void Save_Load()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+       // if (Input.GetKeyDown(KeyCode.K))
+       if(IsSaved == true)
         {
             inventory.Save();
             equipment.Save();
-        }
-        if(Input.GetKeyDown(KeyCode.L))
+            IsSaved = false;        }
+        //if(Input.GetKeyDown(KeyCode.L))
+        if(IsLoaded == true)
         {
             inventory.Load();
             equipment.Load();
+            IsLoaded = false;
         }
     }
     void UpdateMovement()
