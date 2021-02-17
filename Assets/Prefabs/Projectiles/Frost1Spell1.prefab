@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 5336885763043911575}
   - component: {fileID: 4273536545500190235}
   - component: {fileID: -3403746410286712137}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Frost1Spell1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4879,3 +4879,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0dd276be3b075624692e76f6debcedc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AttackDemage: 2

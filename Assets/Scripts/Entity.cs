@@ -15,6 +15,10 @@ public class Entity : MonoBehaviour
     Vector2 position;
     [SerializeField]
     GameObject prefab;
+    [SerializeField]
+    GameObject prefab2;
+    [SerializeField]
+    GameObject prefab3;
     public float MaxHealth
     {
         get
@@ -51,12 +55,25 @@ public class Entity : MonoBehaviour
 
                 if (gameObject.tag == "Mob" || gameObject.tag == "Box")
                 {
-
-                    position = gameObject.transform.position;
-                    Instantiate(prefab, position, Quaternion.identity);
-                    Destroy(gameObject);
-                    
-
+                    var randomInt = UnityEngine.Random.Range(0, 2);
+                    if (randomInt == 0)
+                    {
+                        position = gameObject.transform.position;
+                        Instantiate(prefab, position, Quaternion.identity);
+                        Destroy(gameObject);
+                    }
+                    else if(randomInt == 1)
+                    {
+                        position = gameObject.transform.position;
+                        Instantiate(prefab2, position, Quaternion.identity);
+                        Destroy(gameObject);
+                    }
+                    else if(randomInt ==2)
+                    {
+                        position = gameObject.transform.position;
+                        Instantiate(prefab3, position, Quaternion.identity);
+                        Destroy(gameObject);
+                    }
                 }
                 else
                     SceneManager.LoadScene("Dead");

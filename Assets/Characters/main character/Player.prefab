@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3247239693265949829}
   - component: {fileID: 1746870828378193933}
   - component: {fileID: 6940358467813351773}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: shadow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2550895639209325799}
   - component: {fileID: 1017990182530127716}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: right-foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -187,7 +187,7 @@ GameObject:
   - component: {fileID: 5135380073653807613}
   - component: {fileID: 5694663221850944237}
   - component: {fileID: 3893374622296134250}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: stats (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 8537657152197247988}
   - component: {fileID: 4393257534221553848}
   - component: {fileID: 5082700037012872711}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Exp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -468,7 +468,7 @@ GameObject:
   - component: {fileID: 5963631067369544418}
   - component: {fileID: 7706317976744972708}
   - component: {fileID: 8108970787230613902}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040638009396364064}
   - component: {fileID: 8637093197805939710}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -636,7 +636,7 @@ GameObject:
   - component: {fileID: 8621550399718686374}
   - component: {fileID: 8241291987757650941}
   - component: {fileID: 6115715266236258386}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Dash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6458136617821321458}
   - component: {fileID: 3905906557351328952}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: shield
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -788,7 +788,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7671602137352805353}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 6509450401412011908}
   - component: {fileID: 883499853359625183}
   - component: {fileID: 7896154492359585645}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 918096040213717395}
   - component: {fileID: 8345020310412089909}
   - component: {fileID: 5480698898590062519}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Arrows
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1139,7 +1139,7 @@ GameObject:
   - component: {fileID: 2698099883730743954}
   - component: {fileID: 4557976828308014936}
   - component: {fileID: 1767327639390040383}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: TextPRESS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1298,7 +1298,7 @@ GameObject:
   - component: {fileID: 1934733177431441242}
   - component: {fileID: 2269577591344087927}
   - component: {fileID: 4333560914183033345}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1432,7 +1432,7 @@ GameObject:
   - component: {fileID: 7995592811253734968}
   - component: {fileID: 3421242407848835435}
   - component: {fileID: 3789239228490473076}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: heart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1503,7 +1503,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8243944346917582000}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1535,7 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 251076509798861614}
   - component: {fileID: 6810089416823640763}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: right-hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1619,7 +1619,7 @@ GameObject:
   - component: {fileID: 8925854383345252068}
   - component: {fileID: 9149185466167976321}
   - component: {fileID: 8956817493090862197}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Dash BW
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1691,7 +1691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4876865167658469464}
   - component: {fileID: 4657220982188344701}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: left-foot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1773,7 +1773,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5797986858132046885}
   - component: {fileID: 3410234927143145674}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1869,7 +1869,7 @@ GameObject:
   - component: {fileID: 1644170418993825364}
   - component: {fileID: 2061083689803016922}
   - component: {fileID: 5961456865376899786}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -1969,6 +1969,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitialHealth: 10
   prefab: {fileID: 0}
+  prefab2: {fileID: 0}
+  prefab3: {fileID: 0}
 --- !u!58 &6525153238144033602
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -2171,7 +2173,7 @@ GameObject:
   - component: {fileID: 5956767224680370926}
   - component: {fileID: 7751043804439562915}
   - component: {fileID: 9020875752982904793}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -2345,7 +2347,7 @@ GameObject:
   - component: {fileID: 7788035508164753148}
   - component: {fileID: 1420638337186738860}
   - component: {fileID: 4306717810561611413}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: TextPRESS 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2500,7 +2502,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6447711743094170410}
   - component: {fileID: 252712342594470918}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2584,7 +2586,7 @@ GameObject:
   - component: {fileID: 1186621851440586297}
   - component: {fileID: 7438022903632219812}
   - component: {fileID: 558336788612148801}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: star
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2656,7 +2658,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5436503512542496974}
   - component: {fileID: 7447898215604313950}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: left-hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2739,7 +2741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7808703233004059512}
   - component: {fileID: 6160746698631626811}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: hair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2822,7 +2824,7 @@ GameObject:
   - component: {fileID: 1180694519581903310}
   - component: {fileID: 6603262988509696643}
   - component: {fileID: 5847390388373276928}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: stats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2947,7 +2949,7 @@ GameObject:
   - component: {fileID: 6639167918430097106}
   - component: {fileID: 4353117994488599576}
   - component: {fileID: 5349553431041256843}
-  m_Layer: 5
+  m_Layer: 17
   m_Name: Level
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3101,7 +3103,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1815389836606580917}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: sword
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3136,7 +3138,7 @@ GameObject:
   - component: {fileID: 4119354949641803022}
   - component: {fileID: 7831144536211007120}
   - component: {fileID: 522961542144952003}
-  m_Layer: 0
+  m_Layer: 17
   m_Name: stats (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3322,6 +3324,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5309291264384215587, guid: 7289318b455205d42a81931745a3aeb8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7289318b455205d42a81931745a3aeb8, type: 3}
 --- !u!4 &1177566648820707497 stripped
@@ -3397,6 +3404,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crosshair
       objectReference: {fileID: 0}
+    - target: {fileID: 1137873252394631482, guid: aa8ec4b42ced9ee479fbdee9ecc6d1e3,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa8ec4b42ced9ee479fbdee9ecc6d1e3, type: 3}
 --- !u!4 &3077051193197424995 stripped
@@ -3412,6 +3424,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1815389836606580917}
     m_Modifications:
+    - target: {fileID: 5226214215737734185, guid: 1bc59269bf3a7aa429495db5ee229248,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 5226214216844600084, guid: 1bc59269bf3a7aa429495db5ee229248,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3481,6 +3498,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5226214216844600107, guid: 1bc59269bf3a7aa429495db5ee229248,
+        type: 3}
+      propertyPath: m_Layer
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bc59269bf3a7aa429495db5ee229248, type: 3}

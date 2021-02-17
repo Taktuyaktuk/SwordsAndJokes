@@ -186,6 +186,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitialHealth: 5
   prefab: {fileID: 8572293953042856697, guid: ef972e132716f6249851d850ca469adb, type: 3}
+  prefab2: {fileID: 9058631669014608635, guid: 38ac33649b3d17949b25c7e57f6e4699, type: 3}
+  prefab3: {fileID: 3853090749172286196, guid: d14cf41de4f74354f9fdf1e6676e5eeb, type: 3}
 --- !u!114 &5721742925211353374
 MonoBehaviour:
   m_ObjectHideFlags: 0

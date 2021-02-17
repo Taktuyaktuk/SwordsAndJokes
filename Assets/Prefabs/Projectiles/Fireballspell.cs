@@ -15,7 +15,7 @@ public class Fireballspell : MonoBehaviour
 
     void Start()
     {
-
+        Physics2D.IgnoreLayerCollision(15, 17);
     }
 
     // Update is called once per frame
