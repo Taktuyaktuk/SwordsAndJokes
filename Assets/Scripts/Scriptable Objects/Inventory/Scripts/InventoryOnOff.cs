@@ -10,8 +10,8 @@ public class InventoryOnOff : MonoBehaviour
 
     private void Start()
     {
-        inventoryOnOff.SetActive(true);
-        inventory2OnOff.SetActive(true);
+        inventoryOnOff.SetActive(false);
+        inventory2OnOff.SetActive(false);
     }
 
     private void Update()
