@@ -543,6 +543,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f58f3146933a4d0fad3a7951dfe4308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabPunch: {fileID: 3154702141740840984, guid: d54aeaf1d5d594841960a04daabf939b,
+    type: 3}
+  punchPosition: {x: 0, y: 0}
+  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2953758532111485029
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5797986858132046885
 Transform:
   m_ObjectHideFlags: 0
@@ -3671,7 +3675,7 @@ PrefabInstance:
     - target: {fileID: 5226214216844600107, guid: 1bc59269bf3a7aa429495db5ee229248,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5226214216844600107, guid: 1bc59269bf3a7aa429495db5ee229248,
         type: 3}
