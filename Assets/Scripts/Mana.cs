@@ -20,7 +20,7 @@ public class Mana : MonoBehaviour
         set
         {
             mana = value;
-
+           
             if (mana > maxMana)
                 mana = maxMana;
 
@@ -34,6 +34,7 @@ public class Mana : MonoBehaviour
 
     void Start()
     {
+        OnManaChanged.Invoke(mana);
         gameObject.GetComponent<LevelSystem>().OnLevelUp += Lv => {
             Level = Lv;
             CountMaxValue();
@@ -50,6 +51,7 @@ public class Mana : MonoBehaviour
     {
         if (mana < maxMana)
             mana += 10;
+        OnManaChanged.Invoke(mana);
     }
 
     void CountMaxValue()
