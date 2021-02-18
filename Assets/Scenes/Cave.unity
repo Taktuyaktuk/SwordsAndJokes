@@ -58224,6 +58224,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5674129490050588103, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5674129490050588103, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6664380384620377268, guid: 2b6e6f8457ea22241aa19d729ef12941,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -61320,6 +61330,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838112367516692146, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
