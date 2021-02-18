@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu + Dead/Dead.unity
     guid: ff07b8b9934f24e4397b94b807ecee88
   - enabled: 1
-    path: Assets/Scenes/Domki + Piwnice/House_Purple/House director.unity
+    path: Assets/Scenes/Domek Animacja.unity
     guid: f1427798e7d74e742919ba03d4a2f566
   - enabled: 1
     path: Assets/Scenes/Domki + Piwnice/House_Red/Piwnica_1.unity
