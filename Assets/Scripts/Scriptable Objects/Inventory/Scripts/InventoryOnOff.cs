@@ -13,6 +13,11 @@ public class InventoryOnOff : MonoBehaviour
         inventoryOnOff.SetActive(false);
         inventory2OnOff.SetActive(false);
     }
+    private void Awake()
+    {
+        inventoryOnOff.SetActive(true);
+        inventory2OnOff.SetActive(true);
+    }
 
     private void Update()
     {
