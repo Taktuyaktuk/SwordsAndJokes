@@ -101,6 +101,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 1
+  prefab: {fileID: 0}
+  prefab2: {fileID: 0}
+  prefab3: {fileID: 0}
 --- !u!61 &3853090749172286205
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134,15 +137,15 @@ CircleCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3853090749172286196}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014901161, y: -0.10521555}
+  m_Offset: {x: -0.0014901161, y: -0.101984024}
   serializedVersion: 2
-  m_Radius: 0.5018897
+  m_Radius: 0.6925373
 --- !u!114 &3853090749172286195
 MonoBehaviour:
   m_ObjectHideFlags: 0
