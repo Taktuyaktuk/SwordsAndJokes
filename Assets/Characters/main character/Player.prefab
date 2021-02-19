@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f58f3146933a4d0fad3a7951dfe4308, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabPunch: {fileID: 3154702141740840984, guid: d54aeaf1d5d594841960a04daabf939b,
+  prefabPunch: {fileID: 1759952971334847514, guid: 6b9484f7fc75f594d9fa5ca0afeb433b,
     type: 3}
   punchPosition: {x: 0, y: 0}
   playerPosition: {x: 0, y: 0, z: 0}
