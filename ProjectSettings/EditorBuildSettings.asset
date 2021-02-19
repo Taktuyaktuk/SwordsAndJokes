@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Domki + Piwnice/House_Purple/House director.unity
-    guid: 38f720f822776f542a4494a43013e5df
-  - enabled: 1
     path: Assets/Scenes/Menu + Dead/Menu.unity
     guid: 05463c3d1a2efa34d96173e6352515a2
+  - enabled: 1
+    path: Assets/Scenes/Domki + Piwnice/House_Purple/House director.unity
+    guid: 38f720f822776f542a4494a43013e5df
   - enabled: 1
     path: Assets/Scenes/Mapa/Mapa.unity
     guid: cb19925ebdd7c304f9be0bc545998eff
