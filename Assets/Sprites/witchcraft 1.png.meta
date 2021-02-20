@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 8f7f3b76b837d4b4b8abaea10e34bd99
+guid: ad214081ed3602e4e973883c93b0315b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1338691695221756498
-    second: witchcraft_0
+      213: 8052806304120733857
+    second: witchcraft 1_0
   - first:
-      213: -8712408916783970825
-    second: witchcraft_1
+      213: 9137501185251538968
+    second: witchcraft 1_1
   - first:
-      213: -6688533995554140141
-    second: witchcraft_2
+      213: -4267290362500654215
+    second: witchcraft 1_2
   - first:
-      213: -4336814034872894538
-    second: witchcraft_3
+      213: -1587329739725065725
+    second: witchcraft 1_3
   - first:
-      213: 6870530129524731719
-    second: witchcraft_4
+      213: 1874476293234258952
+    second: witchcraft 1_4
+  - first:
+      213: 378407440013448198
+    second: witchcraft 1_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -102,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: witchcraft_0
+      name: witchcraft 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -116,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 252557d010df39210800000000000000
-      internalID: 1338691695221756498
+      spriteID: 1a084220ba051cf60800000000000000
+      internalID: 8052806304120733857
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: witchcraft_1
+      name: witchcraft 1_1
       rect:
         serializedVersion: 2
         x: 20
@@ -137,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7f54521204e471780800000000000000
-      internalID: -8712408916783970825
+      spriteID: 818f0a95aeceece70800000000000000
+      internalID: 9137501185251538968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: witchcraft_2
+      name: witchcraft 1_2
       rect:
         serializedVersion: 2
         x: 40
@@ -158,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3101fd6b4cd8d23a0800000000000000
-      internalID: -6688533995554140141
+      spriteID: 97b53bd360a87c4c0800000000000000
+      internalID: -4267290362500654215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: witchcraft_3
+      name: witchcraft 1_3
       rect:
         serializedVersion: 2
         x: 60
@@ -179,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6bbf87adc9a80d3c0800000000000000
-      internalID: -4336814034872894538
+      spriteID: 3023642030ca8f9e0800000000000000
+      internalID: -1587329739725065725
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: witchcraft_4
+      name: witchcraft 1_4
       rect:
         serializedVersion: 2
         x: 80
@@ -200,8 +203,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74fa0fc40c6095f50800000000000000
-      internalID: 6870530129524731719
+      spriteID: 8047e1ed14a730a10800000000000000
+      internalID: 1874476293234258952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: witchcraft 1_5
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 0
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604dd52df8f504500800000000000000
+      internalID: 378407440013448198
       vertices: []
       indices: 
       edges: []
