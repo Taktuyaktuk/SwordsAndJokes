@@ -79,7 +79,7 @@ public class Mob : MonoBehaviour
             }
             else
             {
-                TargetPlayer.GetComponent<Entity>().Health -= AttackDamage * Time.deltaTime;
+                TargetPlayer.GetComponent<Entity>().Health -= AttackDamage;
             }
 
             float distance = Vector2.Distance(TargetPlayer.transform.position, gameObject.transform.position);
@@ -116,7 +116,7 @@ public class Mob : MonoBehaviour
     public IEnumerator Attack()
     {
         isAttacking = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(.1f);
         isAttacking = false;
     }
 }
