@@ -191,7 +191,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 4
   AttackCooldown: 1
-  AttackRange: 10
+  AttackRange: 5
   AttackDamage: 1
   Experience: 1
 --- !u!114 &2224722009127651413
