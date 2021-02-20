@@ -13,13 +13,21 @@ public class Mob : MonoBehaviour
 
     public float Speed = 1f;
 
-    [SerializeField]
-    float AttackDistance = 1f;
-
-    [SerializeField]
-    float AttackDemage = 2f;
+    //[SerializeField]
+    //float AttackDistance = 1f;
 
     public int Experience = 1;
+
+    protected bool isAttacking = false;
+
+    [SerializeField]
+    float AttackCooldown = 1f;
+    [SerializeField]
+    float AttackRange = 1f;
+    [SerializeField]
+    float AttackDamage = 1f;
+
+    float AttackTime;
 
     void Start()
     {
@@ -40,7 +48,7 @@ public class Mob : MonoBehaviour
     void Update()
     {
         UpdateMovement();
-        UpdateAttack();
+        UpdateAttack();        
     }
 
     void UpdateMovement()
@@ -60,31 +68,38 @@ public class Mob : MonoBehaviour
         //transform.right = (Vector2)direction;
     }
 
-    void UpdateAttack()   
+    void UpdateAttack()
     {
-        animator.SetBool("Attack", false);
+        if(TargetPlayer != null)
+        {
+            if (!isAttacking)
+            {
+                AttackTime += Time.deltaTime;
+            }
+            else
+            {
+                TargetPlayer.GetComponent<Entity>().Health -= AttackDamage * Time.deltaTime;
+            }
 
-        float dist = Vector3.Distance(FindObjectOfType<Player>().transform.position, transform.position);
-        //Debug.Log("Dist");
-        //Debug.Log(dist);
-
-        if (dist < 7)
-            TargetPlayer = FindObjectOfType<Player>();
+            float distance = Vector2.Distance(TargetPlayer.transform.position, gameObject.transform.position);
+            if (AttackRange >= distance)
+            {
+                Debug.Log("AttackTime " + AttackTime);
+                Debug.Log("AttackCooldown " + AttackCooldown);
+                Debug.Log("isAttacking " + isAttacking);
+                if (AttackTime >= AttackCooldown && !isAttacking)
+                {
+                    AttackTime = 0;
+                    StartCoroutine(Attack());
+                }     
+            }
+        }
         else
-            TargetPlayer = null;
-
-        if (TargetPlayer == null)
-            return;
-
-        // var distance = (TargetPlayer.transform.position - transform.position).magnitude;
-
-
-        //if (distance > AttackDistance)
-        //    return;
-
-        TargetPlayer.GetComponent<Entity>().Health -= AttackDemage * Time.deltaTime;
-        animator.SetBool("Attack",true);
+        {
+            AttackTime = 0;
+        }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -100,4 +115,10 @@ public class Mob : MonoBehaviour
             TargetPlayer = null;
     }
 
+    public IEnumerator Attack()
+    {
+        isAttacking = true;
+        yield return new WaitForSeconds(1f);
+        isAttacking = false;
+    }
 }
