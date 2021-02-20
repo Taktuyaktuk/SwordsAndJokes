@@ -26,7 +26,7 @@ public class Mob : MonoBehaviour
     [SerializeField]
     float AttackDamage = 1f;
     [SerializeField]
-    int Experience = 1;
+    public int Experience = 1;
 
     float AttackTime;
 
