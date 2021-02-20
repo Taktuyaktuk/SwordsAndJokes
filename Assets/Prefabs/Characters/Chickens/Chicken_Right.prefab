@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6847894570529974731}
   - component: {fileID: 6847894570529974727}
   - component: {fileID: 6847894570529974726}
-  m_Layer: 0
+  m_Layer: 4
   m_Name: Chicken_Right
   m_TagString: Mob
   m_Icon: {fileID: 0}
