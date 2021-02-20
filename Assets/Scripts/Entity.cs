@@ -55,6 +55,12 @@ public class Entity : MonoBehaviour
 
                 if (gameObject.tag == "Mob" || gameObject.tag == "Box")
                 {
+                    if(gameObject.tag == "Mob")
+                    {
+                        var player = FindObjectOfType<Player>();
+                        var exp = player.GetComponent<LevelSystem>();
+                        exp.Experience += gameObject.GetComponent<Mob>().Experience;
+                    }
                     var randomInt = UnityEngine.Random.Range(0, 2);
                     if (randomInt == 0)
                     {
