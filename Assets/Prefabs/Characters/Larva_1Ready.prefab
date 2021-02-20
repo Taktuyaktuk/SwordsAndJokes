@@ -137,8 +137,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0022156762, y: -0.43632692}
-  m_Size: {x: 1.9889965, y: 0.494875}
+  m_Offset: {x: 0.025385635, y: -0.3786947}
+  m_Size: {x: 1.9386646, y: 0.644074}
   m_Direction: 1
 --- !u!50 &2224722009127651408
 Rigidbody2D:
@@ -175,6 +175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitialHealth: 20
   prefab: {fileID: 8572293953042856697, guid: ef972e132716f6249851d850ca469adb, type: 3}
+  prefab2: {fileID: 0}
+  prefab3: {fileID: 0}
 --- !u!114 &2224722009127651414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -188,8 +190,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 4
-  AttackDistance: 1
-  AttackDemage: 2
+  AttackCooldown: 1
+  AttackRange: 10
+  AttackDamage: 1
   Experience: 1
 --- !u!114 &2224722009127651413
 MonoBehaviour:

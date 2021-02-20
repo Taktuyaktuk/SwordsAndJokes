@@ -201,18 +201,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 241070755}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &217465417 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6228926752945710361, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 241070755}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &241070755
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -472,8 +460,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 1689376955}
-  dialogText: {fileID: 217465417}
+  dialogBox: {fileID: 353178998}
+  dialogText: {fileID: 1029172996}
   dialog: 'Zoe Wow: Monster''s ? Just Rat''s! If i have more time i will clean it
     by my self! But... I m to bussy...Staying in corner it''s to important.'
   playerInRange: 0
@@ -916,6 +904,12 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &353178998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984374307633346852, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 241070755}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &436310180 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6228926752998247701, guid: 2b6e6f8457ea22241aa19d729ef12941,
@@ -2370,6 +2364,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1029172996 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7001280742784678761, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 241070755}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1058893748
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,16 +2758,41 @@ PrefabInstance:
       propertyPath: m_Size.y
       value: 0.4060011
       objectReference: {fileID: 0}
+    - target: {fileID: 1832315754313697778, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832315754313697779, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.x
+      value: 0.4876543
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832315754313697779, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.pivot.y
+      value: 0.23662554
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832315754313697779, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1832315754313697779, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1832315754313697788, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 1689376955}
+      objectReference: {fileID: 353178998}
     - target: {fileID: 1832315754313697788, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 217465417}
+      objectReference: {fileID: 1029172996}
     - target: {fileID: 1832315754313697788, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
         type: 3}
       propertyPath: dialog
@@ -3035,6 +3066,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7321599088112461944, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7896154492359585645, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -3231,12 +3267,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &1689376955 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6228926754267458938, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 241070755}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1741284892
 PrefabInstance:
   m_ObjectHideFlags: 0
