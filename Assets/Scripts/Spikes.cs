@@ -15,19 +15,16 @@ public class Spikes : MonoBehaviour
 
     private Entity entity;
 
+
     void Update()
     {
-        if(entity != null)
+        AttackTime += Time.deltaTime;
+        if (AttackTime >= AttackCooldown)
         {
-            AttackTime += Time.deltaTime;
-            if (AttackTime >= AttackCooldown)
+            if (entity != null)
             {
                 entity.Health -= AttackDamage;
-                AttackTime = 0;
             }
-        }
-        else
-        {
             AttackTime = 0;
         }
     }

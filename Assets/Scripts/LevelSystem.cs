@@ -51,10 +51,8 @@ public class LevelSystem : MonoBehaviour
 
     void Start()
     {
-        //Experience = 0;
-        //Level = InitLevel;
+        OnExpRange.Invoke(experience, GetExperienceToNextLevel());
     }
-
 
     public int GetExperienceToNextLevel()
     {
