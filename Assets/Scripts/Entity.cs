@@ -99,6 +99,7 @@ public class Entity : MonoBehaviour
         }
         if (gameObject.tag == "Player")
         {
+            CountMaxValue();
             gameObject.GetComponent<LevelSystem>().OnLevelUp += Level =>
             {
                 CountMaxValue();
@@ -117,6 +118,7 @@ public class Entity : MonoBehaviour
         maxHealth = 10f + (Lvl * 1f) + Stats;
         if (health > maxHealth)
             Health = maxHealth;
+        Debug.Log("COUNT " + maxHealth);
         OnMaxHealthChanged.Invoke(maxHealth);
     }
 
