@@ -86,7 +86,7 @@ public class Entity : MonoBehaviour
     public Action<float> OnMaxHealthChanged;
     public Action OnKilled;
 
-    void Awake()
+    void Start()
     {
         if (gameObject.tag == "Mob" || gameObject.tag == "Box")
         {
@@ -95,7 +95,8 @@ public class Entity : MonoBehaviour
         }
         if (gameObject.tag == "Player")
         {
-            gameObject.GetComponent<LevelSystem>().OnLevelUp += Level => {
+            gameObject.GetComponent<LevelSystem>().OnLevelUp += Level =>
+            {
                 CountMaxValue();
             };
             gameObject.GetComponent<PlayerStats>().OnVitalityChanged += Vit =>

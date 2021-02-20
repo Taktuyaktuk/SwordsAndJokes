@@ -36,14 +36,10 @@ public class PlayerShooting : MonoBehaviour
     GameObject[] SpellPref;
     List<float> spellConfig = new List<float> { 2, 4, 4, 5 };
 
-    private void Awake()
-    {
-        bow = FindObjectOfType<Bow>();
-    }
 
     void Start()
     {
-        Bullets = 5;
+        bow = FindObjectOfType<Bow>();
     }
 
     void Update()

@@ -23,6 +23,7 @@ public class LevelSystem : MonoBehaviour
             {
                 Level += 1;
                 experience = 0;
+                gameObject.GetComponent<Entity>().setToMax();
             }
 
             if (OnExpRange != null)
@@ -42,7 +43,6 @@ public class LevelSystem : MonoBehaviour
             level = value;
             if (OnLevelUp != null)
                 OnLevelUp.Invoke(Level);
-            gameObject.GetComponent<Entity>().setToMax();
         }
     }
 

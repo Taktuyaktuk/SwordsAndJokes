@@ -12,7 +12,7 @@ public class SaveSystem : MonoBehaviour
     string fileName;
     SaveData saveData;
 
-    private void Start()
+    private void Awake()
     {
         fileName = Path.Combine(Application.persistentDataPath, SAVE_FILE);
         var player = FindObjectOfType<Player>();
