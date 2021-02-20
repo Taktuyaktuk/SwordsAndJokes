@@ -76,7 +76,11 @@ public class Entity : MonoBehaviour
                     }
                 }
                 else
+                {
+                    setToMax();
+                    gameObject.GetComponent<SaveSystem>().Save();
                     SceneManager.LoadScene("Dead");
+                }  
             }
                
         }
