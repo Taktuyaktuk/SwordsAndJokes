@@ -16,7 +16,6 @@ public class Mob : MonoBehaviour
     //[SerializeField]
     //float AttackDistance = 1f;
 
-    public int Experience = 1;
 
     protected bool isAttacking = false;
 
@@ -26,6 +25,8 @@ public class Mob : MonoBehaviour
     float AttackRange = 1f;
     [SerializeField]
     float AttackDamage = 1f;
+    [SerializeField]
+    int Experience = 1;
 
     float AttackTime;
 
@@ -84,9 +85,6 @@ public class Mob : MonoBehaviour
             float distance = Vector2.Distance(TargetPlayer.transform.position, gameObject.transform.position);
             if (AttackRange >= distance)
             {
-                Debug.Log("AttackTime " + AttackTime);
-                Debug.Log("AttackCooldown " + AttackCooldown);
-                Debug.Log("isAttacking " + isAttacking);
                 if (AttackTime >= AttackCooldown && !isAttacking)
                 {
                     AttackTime = 0;
