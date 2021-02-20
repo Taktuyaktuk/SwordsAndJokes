@@ -35,6 +35,8 @@ public class Mana : MonoBehaviour
     void Start()
     {
         OnManaChanged.Invoke(mana);
+        CheckMana();
+        CountMaxValue();
         gameObject.GetComponent<LevelSystem>().OnLevelUp += Lv => {
             Level = Lv;
             CountMaxValue();
