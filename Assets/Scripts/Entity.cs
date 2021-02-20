@@ -122,6 +122,7 @@ public class Entity : MonoBehaviour
 
     public void setToMax()
     {
+        CountMaxValue();
         Health = maxHealth;
     }
 }
