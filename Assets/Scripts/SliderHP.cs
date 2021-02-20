@@ -23,11 +23,20 @@ public class SliderHP : MonoBehaviour
         };
     }
 
+    private void Update()
+    {
+        setSliderValue();
+    }
+
     private void setSliderValue()
     {
         maxHp = FindObjectOfType<Player>().GetComponent<Entity>().MaxHealth;
-        //Debug.Log("MAX HP" + maxHp);
-        //Debug.Log("HP" + hp);
+        if(hp == null || hp == 0)
+        {
+            hp = FindObjectOfType<Player>().GetComponent<Entity>().Health;
+        }
+        //Debug.Log("maxHp " + maxHp);
+        //Debug.Log("HP " + hp);
         mSlider.maxValue = 100;
         mSlider.value = ((hp * 1f) * 100) / maxHp;
     }

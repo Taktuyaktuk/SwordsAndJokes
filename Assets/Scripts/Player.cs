@@ -305,10 +305,10 @@ public class Player : MonoBehaviour
                     entity.Health -= ((level * 0.5f) + (str * 0.5f));
                     entity.OnKilled = () =>
                     {
-                        Debug.Log("KILLED");
+                        //Debug.Log("KILLED");
                         if (mob != null)
                         {
-                            Debug.Log("KILLED EXP " + mob.Experience);
+                            //Debug.Log("KILLED EXP " + mob.Experience);
                             var exp = GetComponent<LevelSystem>();
                             exp.Experience += mob.Experience;
                         }
