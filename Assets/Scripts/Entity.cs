@@ -37,6 +37,7 @@ public class Entity : MonoBehaviour
         set
         {
             health = value;
+            Debug.Log("SET HP " + value);
 
             //if (gameObject.tag == "Player")
             //{
@@ -48,10 +49,11 @@ public class Entity : MonoBehaviour
             if (OnHealthChanged != null)
                 OnHealthChanged.Invoke(health);
 
-            if (health <= 0.75)
+            if (health <= 0.9)
             {
                 if (OnKilled != null)
                     OnKilled.Invoke();
+
 
                 if (gameObject.tag == "Mob" || gameObject.tag == "Box")
                 {
@@ -76,7 +78,12 @@ public class Entity : MonoBehaviour
                     }
                 }
                 else
+                {
+                    setToMax();
+                    gameObject.GetComponent<SaveSystem>().Save();
                     SceneManager.LoadScene("Dead");
+                }
+                    
             }
                
         }

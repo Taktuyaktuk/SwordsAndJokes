@@ -12,7 +12,7 @@ public class SaveSystem : MonoBehaviour
     string fileName;
     SaveData saveData;
 
-    private void Awake()
+    private void Start()
     {
         fileName = Path.Combine(Application.persistentDataPath, SAVE_FILE);
         var player = FindObjectOfType<Player>();
@@ -22,11 +22,12 @@ public class SaveSystem : MonoBehaviour
 
         if (File.Exists(fileName))
         {
-
+            
             Debug.Log("fileName" + fileName);
             string jsonFromFile = File.ReadAllText(fileName);
             saveData = JsonUtility.FromJson<SaveData>(jsonFromFile);
             float hp = saveData.hp;
+            Debug.Log("LOAD HP " + saveData.hp);
             if ((Int32)saveData.hp <= 0)
                 hp = saveData.level*5f;
             entity.Health = hp;
