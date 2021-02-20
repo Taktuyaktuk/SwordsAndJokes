@@ -22,7 +22,7 @@ public class Spikes : MonoBehaviour
             AttackTime += Time.deltaTime;
             if (AttackTime >= AttackCooldown)
             {
-                entity.Health -= AttackDamage * Time.deltaTime;
+                entity.Health -= AttackDamage;
                 AttackTime = 0;
             }
         }
