@@ -6521,8 +6521,8 @@ Transform:
   m_Children:
   - {fileID: 36786295}
   - {fileID: 1680724796}
-  - {fileID: 1627312361}
   - {fileID: 1594411990}
+  - {fileID: 1627312361}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7262,7 +7262,7 @@ GameObject:
   - component: {fileID: 1594411993}
   - component: {fileID: 1594411992}
   - component: {fileID: 1594411991}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7281,7 +7281,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1594411991
 TilemapCollider2D:
@@ -9014,7 +9014,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1627312362
 TilemapRenderer:

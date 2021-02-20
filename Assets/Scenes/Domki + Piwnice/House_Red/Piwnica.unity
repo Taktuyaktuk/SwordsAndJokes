@@ -5537,12 +5537,6 @@ Transform:
   m_Father: {fileID: 378789911}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &452270546 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6228926754267458938, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 810881935}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &457306450
 GameObject:
   m_ObjectHideFlags: 0
@@ -6497,8 +6491,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 452270546}
-  dialogText: {fileID: 1681928279}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
   dialog: 'Giant Chicken: If Giant Chicken isn''t frightening for you , go down and
     find Ultimate Evil...'
   playerInRange: 0
@@ -6852,8 +6846,8 @@ Transform:
   m_Children:
   - {fileID: 36786295}
   - {fileID: 1680724796}
-  - {fileID: 1627312361}
   - {fileID: 1594411990}
+  - {fileID: 1627312361}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7836,7 +7830,7 @@ GameObject:
   - component: {fileID: 1594411993}
   - component: {fileID: 1594411992}
   - component: {fileID: 1594411991}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7855,7 +7849,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1594411991
 TilemapCollider2D:
@@ -9638,7 +9632,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1627312362
 TilemapRenderer:
@@ -13410,18 +13404,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!114 &1681928279 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6228926752945710361, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 810881935}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1706323911 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6228926753997481809, guid: 2b6e6f8457ea22241aa19d729ef12941,
@@ -14023,8 +14005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 452270546}
-  dialogText: {fileID: 1681928279}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
   dialog: 'Strange Goblin: Me Hungry... Me Good...Me eat only Chicken''s and Game
     developer''s...Me not eat Humans...No hit me...Gugu...Hehe...Gulp....'
   playerInRange: 0
