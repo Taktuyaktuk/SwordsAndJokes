@@ -6703,6 +6703,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3477285489851496017, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4299249342422863316, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_Enabled
@@ -6756,6 +6761,11 @@ PrefabInstance:
     - target: {fileID: 5082700037012872711, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
       propertyPath: m_textInfo.pageCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5329244191195524432, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5349553431041256843, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
