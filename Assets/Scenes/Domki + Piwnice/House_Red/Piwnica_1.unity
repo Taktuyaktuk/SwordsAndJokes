@@ -3991,12 +3991,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &104171532 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6228926754267458938, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 684388789}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &153664369
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4378,18 +4372,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &445443435 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6228926752945710361, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 684388789}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &477513001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4945,8 +4927,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 104171532}
-  dialogText: {fileID: 445443435}
+  dialogBox: {fileID: 0}
+  dialogText: {fileID: 0}
   dialog: '"Whatever you need, Extra hp? Best High? Or maybe you are just thirsty?
     Red Health Potion best for everything-Made for you by Walter Wide. '
   playerInRange: 0
@@ -7907,7 +7889,7 @@ GameObject:
   - component: {fileID: 1965907020}
   - component: {fileID: 1965907019}
   - component: {fileID: 1965907018}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}

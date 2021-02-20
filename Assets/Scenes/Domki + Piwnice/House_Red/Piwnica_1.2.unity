@@ -4644,24 +4644,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b6e6f8457ea22241aa19d729ef12941, type: 3}
---- !u!114 &956354673 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6228926752945710361, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 956354672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &956354674 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6228926754267458938, guid: 2b6e6f8457ea22241aa19d729ef12941,
-    type: 3}
-  m_PrefabInstance: {fileID: 956354672}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &956354675 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6228926753529632555, guid: 2b6e6f8457ea22241aa19d729ef12941,
@@ -4878,8 +4860,8 @@ Transform:
   m_Children:
   - {fileID: 36786295}
   - {fileID: 1680724796}
-  - {fileID: 1627312361}
   - {fileID: 1702196727}
+  - {fileID: 1627312361}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5252,7 +5234,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!483693784 &1627312362
 TilemapRenderer:
@@ -5954,12 +5936,12 @@ PrefabInstance:
         type: 3}
       propertyPath: dialogBox
       value: 
-      objectReference: {fileID: 956354674}
+      objectReference: {fileID: 0}
     - target: {fileID: 1832315754313697788, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
         type: 3}
       propertyPath: dialogText
       value: 
-      objectReference: {fileID: 956354673}
+      objectReference: {fileID: 0}
     - target: {fileID: 1832315754313697788, guid: 878c0d78f8c16fc44a8956c9d9a56c2c,
         type: 3}
       propertyPath: dialog
@@ -7506,7 +7488,7 @@ GameObject:
   - component: {fileID: 1702196730}
   - component: {fileID: 1702196729}
   - component: {fileID: 1702196728}
-  m_Layer: 0
+  m_Layer: 16
   m_Name: Walls_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7525,7 +7507,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1013328629}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!19719996 &1702196728
 TilemapCollider2D:
