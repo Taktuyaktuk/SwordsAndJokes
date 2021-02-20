@@ -133,6 +133,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1057533034}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &81223764 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984374307633346852, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 726794779}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &101705860
 GameObject:
   m_ObjectHideFlags: 0
@@ -8533,6 +8539,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1371587810673679598, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 1371587810673679598, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5674129490050588103, guid: 2b6e6f8457ea22241aa19d729ef12941,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -8542,6 +8558,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926752945710361, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_Text
+      value: Siema byku zajebany
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458938, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 136.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6228926754267458939, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 255.4
       objectReference: {fileID: 0}
     - target: {fileID: 6664380384620377268, guid: 2b6e6f8457ea22241aa19d729ef12941,
         type: 3}
@@ -8664,6 +8725,11 @@ PrefabInstance:
       value: Canvas - Jajeczka - Obecny
       objectReference: {fileID: 0}
     - target: {fileID: 6664380384699581963, guid: 2b6e6f8457ea22241aa19d729ef12941,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8984374307633346852, guid: 2b6e6f8457ea22241aa19d729ef12941,
         type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -13535,6 +13601,8 @@ PlayableDirector:
     value: {fileID: 18710620}
   - key: {fileID: 6085543645774033951, guid: 1e7bc97eed4a8d04389575df30e4d88e, type: 2}
     value: {fileID: 18710620}
+  - key: {fileID: -3564372217808192872, guid: 1e7bc97eed4a8d04389575df30e4d88e, type: 2}
+    value: {fileID: 81223764}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1894010253
