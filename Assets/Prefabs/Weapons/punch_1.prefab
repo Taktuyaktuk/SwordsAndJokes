@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1759952971334847516}
   - component: {fileID: 1759952971334847515}
   - component: {fileID: 7078895276762831345}
+  - component: {fileID: 7977576422462139645}
   m_Layer: 15
   m_Name: punch_1
   m_TagString: Untagged
@@ -133,3 +134,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackDemage: 2
+  time: 0.2
+--- !u!114 &7977576422462139645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1759952971334847514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63c1d6d089554cc469f7641c0c4c7461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 0.35

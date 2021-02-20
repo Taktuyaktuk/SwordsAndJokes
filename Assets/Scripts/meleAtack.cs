@@ -9,6 +9,7 @@ public class meleAtack : MonoBehaviour
     [SerializeField]
     float AttackDemage = 2f;
     Rigidbody2D m_rigidbody2d;
+    public float time = 0.25f;
 
 
     void Start()
@@ -34,7 +35,7 @@ public class meleAtack : MonoBehaviour
             Debug.Log(TargetMob);
             TargetMob.GetComponent<Entity>().Health -= AttackDemage;
 
-            Destroy(this.gameObject);
+            Destroy(this.gameObject,time);
 
 
 
