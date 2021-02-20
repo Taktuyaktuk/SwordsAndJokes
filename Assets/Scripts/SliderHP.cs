@@ -25,8 +25,9 @@ public class SliderHP : MonoBehaviour
 
     private void setSliderValue()
     {
-        Debug.Log("MAX HP" + maxHp);
-        Debug.Log("HP" + hp);
+        maxHp = FindObjectOfType<Player>().GetComponent<Entity>().MaxHealth;
+        //Debug.Log("MAX HP" + maxHp);
+        //Debug.Log("HP" + hp);
         mSlider.maxValue = 100;
         mSlider.value = ((hp * 1f) * 100) / maxHp;
     }
