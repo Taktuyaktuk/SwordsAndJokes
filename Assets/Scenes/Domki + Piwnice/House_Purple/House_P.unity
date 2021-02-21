@@ -5666,12 +5666,12 @@ PrefabInstance:
     - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: playerPosition.x
-      value: 31
+      value: 51
       objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: playerPosition.y
-      value: 15
+      value: -21
       objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088502, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
