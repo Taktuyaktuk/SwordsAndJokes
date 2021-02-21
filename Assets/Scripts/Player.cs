@@ -30,6 +30,8 @@ public class Player : MonoBehaviour
     public float startDashTime;
     private int direction;
 
+    
+
     public GameObject dashEffect;
     //dotad
    // start jarek 29.10
@@ -46,6 +48,8 @@ public class Player : MonoBehaviour
 
     public AudioClip jump;
     AudioSource audioSource;
+
+    
     
     private void Awake()
     {
@@ -73,6 +77,7 @@ public class Player : MonoBehaviour
             equipment.GetSlots[i].OnBeforeUpdate += OnBeforeSlotUpdate;
             equipment.GetSlots[i].OnAfterUpdate += OnAfterSlotUpdate;
         }
+        audioSource = GetComponent<AudioSource>();
         
     }
 
@@ -206,11 +211,13 @@ public class Player : MonoBehaviour
         var WalkingDirection = Vector3.zero;
 
         WalkingDirection += Vector3.up * Input.GetAxis("Vertical");
+        
         WalkingDirection += Vector3.right * Input.GetAxis("Horizontal");
 
         if (Input.GetKey("space"))
         {
             StartCoroutine(AttackCo());
+            
         }
         //WalkingDirection = WalkingDirection.normalized;
 
@@ -262,6 +269,7 @@ public class Player : MonoBehaviour
                 nextDashTime = Time.time + coolDownTime;
                 audioSource = GetComponent<AudioSource>();
                 audioSource.Play(0);
+                
             }
             else if (Input.GetKey(KeyCode.W) && Input.GetKey(KeyCode.Mouse1) && Time.time > nextDashTime)
             {

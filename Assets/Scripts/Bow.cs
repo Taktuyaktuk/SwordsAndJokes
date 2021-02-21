@@ -9,6 +9,7 @@ public class Bow : MonoBehaviour
     public GameObject prefabPunch;
     public Vector2 punchPosition;
     public Vector3 playerPosition;
+    AudioSource audioSource;
 
     private void Awake()
     {
@@ -34,8 +35,11 @@ public class Bow : MonoBehaviour
         //var delta = crosshair.transform.position - transform.position;
         //var targetRotation = (Vector2)delta;
         //punchPosition = transform.right = Vector3.Lerp(transform.right, targetRotation, Time.deltaTime * 10f);
-        if (Input.GetKeyDown(KeyCode.V))
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            audioSource = GetComponent<AudioSource>();
+            audioSource.Play(0);
             Instantiate(prefabPunch, punchPosition, Quaternion.identity);
-
+        }
     }
 }
