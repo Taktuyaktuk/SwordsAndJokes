@@ -21,7 +21,7 @@ public class BulletDemage : MonoBehaviour
 
             if (entity != null)
             {
-                entity.Health -= 5f;
+                entity.Health -= 2f;
                 Destroy(gameObject);
             }
         }

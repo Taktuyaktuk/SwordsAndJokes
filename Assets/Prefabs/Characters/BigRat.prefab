@@ -139,6 +139,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialHealth: 20
+  prefab: {fileID: 381264379278125340, guid: 65670264f8f747245b09c492ab956cf2, type: 3}
+  prefab2: {fileID: 6258044021213912566, guid: b04572529a71be940bab080ca77db407, type: 3}
+  prefab3: {fileID: 0}
 --- !u!114 &5721742925211353374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -152,8 +155,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 12
-  AttackDistance: 2
-  AttackDemage: 5
+  AttackCooldown: 1
+  AttackRange: 1
+  AttackDamage: 1
   Experience: 3
 --- !u!95 &2218717017218344553
 Animator:

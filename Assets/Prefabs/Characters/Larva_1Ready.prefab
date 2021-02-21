@@ -175,7 +175,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   InitialHealth: 20
   prefab: {fileID: 8572293953042856697, guid: ef972e132716f6249851d850ca469adb, type: 3}
-  prefab2: {fileID: 0}
+  prefab2: {fileID: 381264379278125340, guid: 65670264f8f747245b09c492ab956cf2, type: 3}
   prefab3: {fileID: 0}
 --- !u!114 &2224722009127651414
 MonoBehaviour:
