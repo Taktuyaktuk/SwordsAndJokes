@@ -188,6 +188,12 @@ PrefabInstance:
       propertyPath: newScene
       value: Piwnica
       objectReference: {fileID: 0}
+    - target: {fileID: 8966815034995088501, guid: 28173f5d47238d349ba92e18bbaa1e03,
+        type: 3}
+      propertyPath: playerStorage
+      value: 
+      objectReference: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886,
+        type: 2}
     - target: {fileID: 8966815034995088502, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: m_Name
@@ -1171,16 +1177,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1058893749}
     m_Modifications:
-    - target: {fileID: 6236319597895517963, guid: e7c99e2b54158ee41a5bb788480f4d63,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: 0.49288464
-      objectReference: {fileID: 0}
-    - target: {fileID: 6236319597895517963, guid: e7c99e2b54158ee41a5bb788480f4d63,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 3.3803062
-      objectReference: {fileID: 0}
     - target: {fileID: 6236319597895517964, guid: e7c99e2b54158ee41a5bb788480f4d63,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2508,7 +2504,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.027031064, y: 0.39566326}
+  m_Offset: {x: 0.027031064, y: -0.068719864}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2519,7 +2515,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.523025, y: 1.262785}
+  m_Size: {x: 1.523025, y: 0.9642525}
   m_EdgeRadius: 0
 --- !u!50 &1058982804
 Rigidbody2D:
@@ -2957,6 +2953,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838112367516692108, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4039500603140403470, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}

@@ -56,4 +56,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Domki + Piwnice/House_Red/Piwnicapierwsza.unity
     guid: 09b87625dd0373f41bf3e6254ab520fb
+  - enabled: 1
+    path: Assets/Scenes/Domki + Piwnice/House_Purple/House_P.unity
+    guid: e83cdc6522c5b0e4a99402c4107558a7
   m_configObjects: {}
