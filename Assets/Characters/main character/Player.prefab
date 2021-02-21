@@ -458,22 +458,6 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8342693391400583348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2019529549683217257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f58f3146933a4d0fad3a7951dfe4308, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  prefabPunch: {fileID: 1759952971334847514, guid: 6b9484f7fc75f594d9fa5ca0afeb433b,
-    type: 3}
-  punchPosition: {x: 0, y: 0}
-  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!82 &6222075822401014758
 AudioSource:
   m_ObjectHideFlags: 0
@@ -484,9 +468,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9f2182558ca59134c86b1e9a67cf1642, type: 3}
+  m_audioClip: {fileID: 8300000, guid: d619bad6a2f1b1b4eab2163bdfe8459d, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -570,6 +554,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &8342693391400583348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2019529549683217257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f58f3146933a4d0fad3a7951dfe4308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabPunch: {fileID: 1759952971334847514, guid: 6b9484f7fc75f594d9fa5ca0afeb433b,
+    type: 3}
+  punchPosition: {x: 0, y: 0}
+  playerPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &2095068626779500186
 GameObject:
   m_ObjectHideFlags: 0
