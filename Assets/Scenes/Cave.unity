@@ -65453,7 +65453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: Mapa
-  playerPosition: {x: 115.5, y: 7}
+  playerPosition: {x: 115.5, y: 6}
   playerStorage: {fileID: 11400000, guid: a465576b0864745408e44ea33bc63886, type: 2}
 --- !u!4 &771030775
 Transform:
@@ -66384,6 +66384,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5552576027798368087, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5961456865376899786, guid: 348d9c25fdb572d4f9315f0fe3e8b07b,
         type: 3}
