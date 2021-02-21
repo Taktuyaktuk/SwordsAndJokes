@@ -3943,54 +3943,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &73473230
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 73473232}
-  - component: {fileID: 73473231}
-  m_Layer: 12
-  m_Name: Psychodelic
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &73473231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73473230}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: b8016ce6478717a469bc6e4588bee3e3, type: 2}
-  isGlobal: 1
-  blendDistance: 0
-  weight: 1
-  priority: 0
---- !u!4 &73473232
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 73473230}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.877372, y: -6.090836, z: -7.613232}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &160053608
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4105,7 +4057,7 @@ PrefabInstance:
     - target: {fileID: 8966815034995088499, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8966815034995088499, guid: 28173f5d47238d349ba92e18bbaa1e03,
         type: 3}
@@ -4221,7 +4173,7 @@ PrefabInstance:
     - target: {fileID: 381264379278125338, guid: 65670264f8f747245b09c492ab956cf2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 381264379278125338, guid: 65670264f8f747245b09c492ab956cf2,
         type: 3}
@@ -4736,6 +4688,24 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 684388789}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &684388794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7001280742784678761, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 684388789}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &684388795 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984374307633346852, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 684388789}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &690368897
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,7 +4737,7 @@ Transform:
   - {fileID: 1141684539}
   - {fileID: 219583421}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &914529712
 PrefabInstance:
@@ -4932,8 +4902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 684388795}
+  dialogText: {fileID: 684388794}
   dialog: '"Whatever you need, Extra hp? Best High? Or maybe you are just thirsty?
     Red Health Potion best for everything-Made for you by Walter Wide. '
   playerInRange: 0
@@ -7724,6 +7694,54 @@ MonoBehaviour:
     type: 3}
   AreaRadious: 1.5
   Duration: 25
+--- !u!1 &1832505292
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1832505294}
+  - component: {fileID: 1832505293}
+  m_Layer: 12
+  m_Name: Psychodelic level 2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1832505293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832505292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 9bc466a4a5ce33c40b9a04ade178e707, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
+--- !u!4 &1832505294
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832505292}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.2506075, y: -8.940462, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1852411595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7769,7 +7787,7 @@ PrefabInstance:
     - target: {fileID: 381264379278125338, guid: 65670264f8f747245b09c492ab956cf2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 381264379278125338, guid: 65670264f8f747245b09c492ab956cf2,
         type: 3}
@@ -7890,7 +7908,7 @@ Transform:
   - {fileID: 1798655119}
   - {fileID: 1317442318}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1965907016
 GameObject:

@@ -6280,6 +6280,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b6e6f8457ea22241aa19d729ef12941, type: 3}
+--- !u!114 &810881936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7001280742784678761, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &810881937 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8984374307633346852, guid: 2b6e6f8457ea22241aa19d729ef12941,
+    type: 3}
+  m_PrefabInstance: {fileID: 810881935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &869631639
 GameObject:
   m_ObjectHideFlags: 0
@@ -6490,8 +6508,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 810881937}
+  dialogText: {fileID: 810881936}
   dialog: 'Giant Chicken: If Giant Chicken isn''t frightening for you , go down and
     find Ultimate Evil...'
   playerInRange: 0

@@ -13385,8 +13385,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61f147f0ade01f745b8eaadb4d9f773e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogBox: {fileID: 0}
-  dialogText: {fileID: 0}
+  dialogBox: {fileID: 933880151}
+  dialogText: {fileID: 1375154815}
   dialog: '"18.07.2020 I Was here - Kris."'
   playerInRange: 0
 --- !u!58 &1817035051
