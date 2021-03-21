@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
                             attributes[j].value.RemoveModifier(_slot.item.buffs[i]);
                     }
                 }
-
+                gameObject.GetComponent<PlayerStats>().UpdateInventoryStats();
 
                 break;
             case InterfaceType.chest:
@@ -135,6 +135,7 @@ public class Player : MonoBehaviour
                             attributes[j].value.AddModifier(_slot.item.buffs[i]);
                     }
                 }
+                gameObject.GetComponent<PlayerStats>().UpdateInventoryStats();
 
                 break;
             case InterfaceType.chest:
